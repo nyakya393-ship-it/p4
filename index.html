@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Splatoon 3 ブキ性能アナライザー</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header-title">
+
+        <div class="eyebrow">
+            SPLATOON 3
+        </div>
+
+        <h1>
+            ブキ性能アナライザー
+        </h1>
+
+    </div>
+
+    <div
+    id="dataStatus"
+    class="data-status">
+        データ確認中…
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- 検索 -->
+
+    <section class="control-card">
+
+        <input
+        id="search"
+        type="search"
+        placeholder="ブキ名を検索"
+        autocomplete="off"
+        >
+
+        <div
+        id="categories"
+        class="categories">
+        </div>
+
+    </section>
+
+
+    <div class="main-layout">
+
+
+        <!-- ブキ一覧 -->
+
+        <aside class="weapon-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    ブキ一覧
+                </h2>
+
+                <span id="weaponCount">
+                    0
+                </span>
+
+            </div>
+
+            <div
+            id="weaponList"
+            class="weapon-list">
+            </div>
+
+        </aside>
+
+
+        <!-- 詳細 -->
+
+        <section
+        id="detail"
+        class="detail">
+
+            <div class="empty">
+
+                ブキを選択してください
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
