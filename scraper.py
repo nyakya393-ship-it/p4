@@ -1,956 +1,1280 @@
 import json
 import re
 import time
-import hashlib
-
-from urllib.parse import urljoin, quote
+from pathlib import Path
+from urllib.parse import unquote, urljoin, urlparse
 
 import requests
-
 from bs4 import BeautifulSoup
 
 
+# =========================================================
+# Settings
+# =========================================================
+
 WIKI_ROOT = "https://wikiwiki.jp/splatoon3mix/"
+OUTPUT = Path("data/weapons.json")
 
-INKIPEDIA_ROOT = "https://splatoonwiki.org/"
-
-INKIPEDIA_LIST = (
-    "https://splatoonwiki.org/wiki/"
-    "List_of_main_weapons_in_Splatoon_3"
-)
-
-
-CATEGORIES = {
-
-    "シューター":
-        "ブキ/シューター属",
-
-    "ブラスター":
-        "ブキ/ブラスター属",
-
-    "ローラー":
-        "ブキ/ローラー属",
-
-    "フデ":
-        "ブキ/フデ属",
-
-    "チャージャー":
-        "ブキ/チャージャー属",
-
-    "スロッシャー":
-        "ブキ/スロッシャー属",
-
-    "スピナー":
-        "ブキ/スピナー属",
-
-    "マニューバー":
-        "ブキ/マニューバー属",
-
-    "シェルター":
-        "ブキ/シェルター属",
-
-    "ストリンガー":
-        "ブキ/ストリンガー属",
-
-    "ワイパー":
-        "ブキ/ワイパー属"
-
+CATEGORY_PAGES = {
+    "シューター": "ブキ/シューター属",
+    "ブラスター": "ブキ/ブラスター属",
+    "ローラー": "ブキ/ローラー属",
+    "フデ": "ブキ/フデ属",
+    "チャージャー": "ブキ/チャージャー属",
+    "スロッシャー": "ブキ/スロッシャー属",
+    "スピナー": "ブキ/スピナー属",
+    "マニューバー": "ブキ/マニューバー属",
+    "シェルター": "ブキ/シェルター属",
+    "ストリンガー": "ブキ/ストリンガー属",
+    "ワイパー": "ブキ/ワイパー属",
 }
 
 
+# =========================================================
+# HTTP session
+# =========================================================
+
 session = requests.Session()
 
-session.headers.update({
+session.headers.update(
+    {
+        "User-Agent": (
+            "Mozilla/5.0 "
+            "(compatible; SplatoonWeaponAnalyzer/1.0; "
+            "+https://github.com/)"
+        ),
+        "Accept-Language": "ja,en;q=0.8",
+    }
+)
 
-    "User-Agent":
-        "Splatoon3-Weapon-Analyzer/1.0 "
 
-        "(GitHub Actions)"
-
-})
-
-
-def get(url):
-
-    response = session.get(
-        url,
-        timeout=30
-    )
-
-    response.raise_for_status()
-
-    return response.text
-
+# =========================================================
+# Text helpers
+# =========================================================
 
 def clean(text):
+    text = text or ""
 
-    return re.sub(
-        r"\s+",
-        " ",
-        text or ""
-    ).strip()
+    text = text.replace("\xa0", " ")
+
+    text = re.sub(r"[\r\n\t]+", " ", text)
+
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
 
 
 def normalize(text):
-
     return (
-
         clean(text)
-
-        .replace("（","(")
-
-        .replace("）",")")
-
-        .replace("　","")
-
+        .replace(" ", "")
+        .replace("　", "")
+        .lower()
     )
 
 
-def first_number(text):
+# =========================================================
+# HTTP helpers
+# =========================================================
 
-    if not text:
+def get(url, retries=3):
+    last_error = None
 
-        return None
-
-
-    match = re.search(
-
-        r"(?<!\d)"
-        r"(\d+(?:\.\d+)?)",
-
-        str(text).replace(",","")
-
-    )
-
-
-    if not match:
-
-        return None
-
-
-    number = float(
-        match.group(1)
-    )
-
-
-    if number.is_integer():
-
-        return int(number)
-
-    return number
-
-
-def range_numbers(text):
-
-    if not text:
-
-        return None, None
-
-
-    match = re.search(
-
-        r"(\d+(?:\.\d+)?)"
-        r"\s*[～~\-]\s*"
-        r"(\d+(?:\.\d+)?)",
-
-        text
-
-    )
-
-
-    if match:
-
-        return (
-
-            float(match.group(1)),
-
-            float(match.group(2))
-
-        )
-
-
-    number = first_number(text)
-
-    return number, None
-
-
-def rows_from_page(soup):
-
-    rows = []
-
-
-    for tr in soup.select("tr"):
-
-        cells = [
-
-            clean(
-                cell.get_text(
-                    " ",
-                    strip=True
-                )
+    for attempt in range(retries):
+        try:
+            response = session.get(
+                url,
+                timeout=30,
             )
 
-            for cell in tr.select(
-                "th,td"
+            response.raise_for_status()
+
+            response.encoding = (
+                response.apparent_encoding
+                or response.encoding
             )
 
-        ]
+            return response.text
 
+        except requests.RequestException as exc:
+            last_error = exc
 
-        if len(cells) >= 2:
+            time.sleep(
+                1.5 * (attempt + 1)
+            )
 
-            rows.append(cells)
-
-
-    return rows
-
-
-def find_exact(rows, labels):
-
-    labels = [
-
-        normalize(label)
-
-        for label in labels
-
-    ]
-
-
-    for row in rows:
-
-        for index, cell in enumerate(row):
-
-            current = normalize(cell)
-
-
-            if current in labels:
-
-                if index + 1 < len(row):
-
-                    return row[index + 1]
-
-
-                if len(row) >= 2:
-
-                    return row[-1]
-
-
-    return None
-
-
-def find_contains(rows, labels):
-
-    labels = [
-
-        normalize(label)
-
-        for label in labels
-
-    ]
-
-
-    for row in rows:
-
-        for index, cell in enumerate(row):
-
-            current = normalize(cell)
-
-
-            if any(
-                label in current
-                for label in labels
-            ):
-
-                if index + 1 < len(row):
-
-                    return row[index + 1]
-
-
-                if len(row) >= 2:
-
-                    return row[-1]
-
-
-    return None
-
-
-def get_page_title(soup, fallback):
-
-    h1 = soup.select_one("h1")
-
-
-    if not h1:
-
-        return fallback
-
-
-    title = clean(
-        h1.get_text(
-            " ",
-            strip=True
-        )
+    raise RuntimeError(
+        f"取得失敗: {url}\n{last_error}"
     )
 
 
-    title = title.replace(
+def soup_from(url):
+    html = get(url)
 
-        " - Splatoon3 - "
-        "スプラトゥーン3 攻略＆検証 Wiki*",
-
-        ""
-
+    return BeautifulSoup(
+        html,
+        "html.parser",
     )
 
 
-    return title
+# =========================================================
+# URL helpers
+# =========================================================
 
-
-def get_weapon_links(
-    category_path
-):
-
-    url = urljoin(
-
+def absolute_url(href):
+    return urljoin(
         WIKI_ROOT,
-
-        quote(
-            category_path,
-            safe="/"
-        )
-
+        href,
     )
 
 
-    soup =
-        BeautifulSoup(
-            get(url),
-            "lxml"
-        )
+def is_wiki_weapon_url(url):
+    """
+    WikiWikiの個別ブキページらしいURLだけを通す。
+    """
 
+    parsed = urlparse(url)
 
-    links = {}
-
-
-    for a in soup.select(
-        "a[href]"
+    if (
+        parsed.netloc
+        and parsed.netloc != "wikiwiki.jp"
     ):
+        return False
 
-        href =
-            a.get("href","")
+    path = unquote(parsed.path)
 
-        text =
-            clean(
-                a.get_text(
-                    " ",
-                    strip=True
-                )
-            )
+    if not path.startswith(
+        "/splatoon3mix/ブキ/"
+    ):
+        return False
+
+    name = path.rsplit(
+        "/",
+        1,
+    )[-1]
+
+    if not name:
+        return False
+
+    excluded = {
+        "ブキ",
+        "ブキ性能",
+        "シューター属",
+        "ブラスター属",
+        "ローラー属",
+        "フデ属",
+        "チャージャー属",
+        "スロッシャー属",
+        "スピナー属",
+        "マニューバー属",
+        "シェルター属",
+        "ストリンガー属",
+        "ワイパー属",
+        "比較",
+        "サブウェポン",
+        "スペシャルウェポン",
+    }
+
+    if name in excluded:
+        return False
+
+    if "属" in name:
+        return False
+
+    return True
 
 
-        if not text:
+# =========================================================
+# Weapon discovery
+# =========================================================
 
+def page_links(soup):
+    result = set()
+
+    for a in soup.select("a[href]"):
+
+        href = a.get(
+            "href",
+            "",
+        ).strip()
+
+        if not href:
             continue
 
-
-        if "/ブキ/" not in href:
-
+        if href.startswith("#"):
             continue
 
+        if href.startswith("http"):
+            url = href
+        else:
+            url = absolute_url(href)
 
-        full =
-            urljoin(
-                WIKI_ROOT,
-                href
-            )
+        url = url.split(
+            "#",
+            1,
+        )[0]
 
-
-        excluded = [
-
-            "属",
-
-            "ブキ性能",
-
-            "比較",
-
-            "サブウェポン",
-
-            "スペシャルウェポン"
-
-        ]
-
-
-        if any(
-            item in full
-            for item in excluded
-        ):
-
-            continue
-
-
-        links[full] = text
-
-
-    return links
-
-
-def get_inkipedia_links():
-
-    result = {}
-
-
-    try:
-
-        soup =
-            BeautifulSoup(
-                get(INKIPEDIA_LIST),
-                "lxml"
-            )
-
-
-        for a in soup.select(
-            "a[href]"
-        ):
-
-            href =
-                a.get("href","")
-
-            name =
-                clean(
-                    a.get_text(
-                        " ",
-                        strip=True
-                    )
-                )
-
-
-            if not name:
-
-                continue
-
-
-            if "/wiki/" not in href:
-
-                continue
-
-
-            result[name] =
-                urljoin(
-                    INKIPEDIA_ROOT,
-                    href
-                )
-
-
-    except Exception as error:
-
-        print(
-            "Inkipedia lookup failed:",
-            error
-        )
-
+        if is_wiki_weapon_url(url):
+            result.add(url)
 
     return result
 
 
-def parse_weapon(
-    url,
-    category
-):
+def discover_weapon_urls():
 
-    soup =
-        BeautifulSoup(
-            get(url),
-            "lxml"
+    urls = {}
+
+    for category, page in CATEGORY_PAGES.items():
+
+        url = urljoin(
+            WIKI_ROOT,
+            page,
         )
 
-
-    rows =
-        rows_from_page(
-            soup
+        print(
+            f"[category] {category}: {url}"
         )
 
+        soup = soup_from(url)
 
-    name =
-        get_page_title(
-            soup,
-            url.rsplit("/",1)[-1]
-        )
+        for weapon_url in page_links(soup):
 
-
-    sub =
-        find_exact(
-            rows,
-            [
-                "サブウェポン",
-                "サブ"
-            ]
-        )
-
-
-    special =
-        find_exact(
-            rows,
-            [
-                "スペシャルウェポン",
-                "スペシャル"
-            ]
-        )
-
-
-    special_points =
-        first_number(
-            find_contains(
-                rows,
-                [
-                    "必要P",
-                    "必要ポイント"
-                ]
+            name = unquote(
+                urlparse(
+                    weapon_url
+                ).path.rsplit(
+                    "/",
+                    1,
+                )[-1]
             )
-        )
+
+            urls[weapon_url] = {
+                "name": name,
+                "category": category,
+            }
+
+        time.sleep(0.25)
+
+    print(
+        f"[discover] {len(urls)} pages found"
+    )
+
+    return urls
 
 
-    direct_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "有効射程（直撃）",
-                    "有効射程(直撃)"
-                ]
+# =========================================================
+# Table parsing
+# =========================================================
+
+def extract_tables(soup):
+
+    rows = []
+
+    for table in soup.find_all("table"):
+
+        for tr in table.find_all("tr"):
+
+            cells = tr.find_all(
+                ["th", "td"]
             )
+
+            if len(cells) < 2:
+                continue
+
+            values = []
+
+            for cell in cells:
+
+                value = clean(
+                    cell.get_text(
+                        " ",
+                        strip=True,
+                    )
+                )
+
+                if value:
+                    values.append(value)
+
+            if len(values) >= 2:
+                rows.append(values)
+
+    return rows
+
+
+def all_text(soup):
+    return clean(
+        soup.get_text(
+            " ",
+            strip=True,
         )
-
-
-    blast_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "ダメージ射程（爆風）",
-                    "ダメージ射程(爆風)"
-                ]
-            )
-        )
-
-
-    normal_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "有効射程"
-                ]
-            )
-        )
-
-
-    range_value = (
-
-        direct_range
-
-        if direct_range is not None
-
-        else normal_range
-
     )
 
 
-    maintain_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "確定数維持射程"
-                ]
+# =========================================================
+# Table value helpers
+# =========================================================
+
+def find_value(rows, labels):
+
+    wanted = [
+        normalize(label)
+        for label in labels
+    ]
+
+    # First: exact / startswith match
+    for row in rows:
+
+        if not row:
+            continue
+
+        first = normalize(row[0])
+
+        for label in wanted:
+
+            if (
+                first == label
+                or first.startswith(label)
+            ):
+
+                if len(row) >= 2:
+                    return clean(
+                        " ".join(
+                            row[1:]
+                        )
+                    )
+
+    # Second: search inside whole row
+    for row in rows:
+
+        joined = normalize(
+            " ".join(row)
+        )
+
+        for label in wanted:
+
+            if label not in joined:
+                continue
+
+            for i, cell in enumerate(row):
+
+                if label in normalize(cell):
+
+                    if i + 1 < len(row):
+
+                        return clean(
+                            " ".join(
+                                row[i + 1:]
+                            )
+                        )
+
+    return ""
+
+
+# =========================================================
+# Number helpers
+# =========================================================
+
+def first_number(value):
+
+    if not value:
+        return None
+
+    match = re.search(
+        r"-?\d+(?:\.\d+)?",
+        value.replace(",", ""),
+    )
+
+    if not match:
+        return None
+
+    try:
+        return float(
+            match.group(0)
+        )
+
+    except ValueError:
+        return None
+
+
+def number_range(value):
+
+    if not value:
+        return None, None
+
+    nums = re.findall(
+        r"-?\d+(?:\.\d+)?",
+        value.replace(",", ""),
+    )
+
+    if not nums:
+        return None, None
+
+    values = [
+        float(x)
+        for x in nums
+    ]
+
+    if len(values) == 1:
+        return (
+            values[0],
+            values[0],
+        )
+
+    return (
+        max(
+            values[0],
+            values[1],
+        ),
+        min(
+            values[0],
+            values[1],
+        ),
+    )
+
+
+def int_or_float(value):
+
+    if value is None:
+        return None
+
+    if float(value).is_integer():
+        return int(value)
+
+    return round(
+        float(value),
+        4,
+    )
+
+
+# =========================================================
+# Damage curve helper
+# =========================================================
+
+def extract_damage_curve(value):
+
+    if not value:
+        return []
+
+    points = []
+
+    # Wikiの表記に距離とダメージの対応が
+    # 明示されている場合だけ簡易的に取得する。
+    pattern = re.compile(
+        r"(\d+(?:\.\d+)?)"
+        r"\s*(?:ダメージ|damage)"
+        r".*?"
+        r"(\d+(?:\.\d+)?)",
+        re.IGNORECASE,
+    )
+
+    for match in pattern.finditer(
+        value
+    ):
+
+        points.append(
+            {
+                "distance": float(
+                    match.group(1)
+                ),
+                "damage": float(
+                    match.group(2)
+                ),
+            }
+        )
+
+    return points
+
+
+# =========================================================
+# Overview parsing
+# =========================================================
+
+def parse_overview(
+    soup,
+    rows,
+):
+
+    text = all_text(soup)
+
+    sub = find_value(
+        rows,
+        [
+            "サブウェポン",
+            "サブ",
+        ],
+    )
+
+    special = find_value(
+        rows,
+        [
+            "スペシャルウェポン",
+            "スペシャル",
+        ],
+    )
+
+    points = find_value(
+        rows,
+        [
+            "必要ポイント",
+            "必要SP",
+            "スペシャル必要ポイント",
+        ],
+    )
+
+    weight = find_value(
+        rows,
+        [
+            "重量",
+            "weight",
+        ],
+    )
+
+    # Fallback
+    if not sub:
+
+        match = re.search(
+            r"サブ(?:ウェポン)?\s*[:：]\s*([^、,]+)",
+            text,
+        )
+
+        if match:
+            sub = clean(
+                match.group(1)
+            )
+
+    if not special:
+
+        match = re.search(
+            r"スペシャル(?:ウェポン)?\s*[:：]\s*([^、,]+)",
+            text,
+        )
+
+        if match:
+            special = clean(
+                match.group(1)
+            )
+
+    return (
+        sub,
+        special,
+        points,
+        weight,
+    )
+
+
+# =========================================================
+# Individual weapon parser
+# =========================================================
+
+def parse_weapon(
+    url,
+    category_info,
+):
+
+    soup = soup_from(url)
+
+    rows = extract_tables(
+        soup
+    )
+
+    # -----------------------------------------------------
+    # Name
+    # -----------------------------------------------------
+
+    title = ""
+
+    if soup.title:
+        title = clean(
+            soup.title.get_text()
+        )
+
+    heading = ""
+
+    page_heading = soup.find(
+        ["h1", "h2"]
+    )
+
+    if page_heading:
+        heading = clean(
+            page_heading.get_text(
+                " ",
+                strip=True,
             )
         )
 
+    name = category_info[
+        "name"
+    ]
 
-    reticle_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "レティクル反応距離"
-                ]
-            )
+    if heading:
+
+        heading = re.sub(
+            r"^ブキ[/／]",
+            "",
+            heading,
         )
 
-
-    paint_range =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "塗り射程"
-                ]
-            )
+        heading = re.sub(
+            r"\s*[-|｜].*$",
+            "",
+            heading,
         )
 
+        if 1 <= len(heading) <= 40:
+            name = heading
 
-    damage_text =
-        find_exact(
-            rows,
-            [
-                "ダメージ"
-            ]
+    elif title:
+
+        title_name = re.sub(
+            r"\s*[-|｜].*$",
+            "",
+            title,
         )
 
-
-    damage_max, damage_min =
-        range_numbers(
-            damage_text
+        title_name = re.sub(
+            r"^ブキ[/／]",
+            "",
+            title_name,
         )
 
+        if 1 <= len(title_name) <= 40:
+            name = title_name
 
-    direct_damage =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "ダメージ（直撃）",
-                    "ダメージ(直撃)"
-                ]
-            )
+    # -----------------------------------------------------
+    # Overview
+    # -----------------------------------------------------
+
+    (
+        sub,
+        special,
+        points_raw,
+        weight,
+    ) = parse_overview(
+        soup,
+        rows,
+    )
+
+    # -----------------------------------------------------
+    # Performance
+    # -----------------------------------------------------
+
+    effective_raw = find_value(
+        rows,
+        [
+            "有効射程",
+            "射程",
+        ],
+    )
+
+    paint_raw = find_value(
+        rows,
+        [
+            "塗り射程",
+        ],
+    )
+
+    damage_raw = find_value(
+        rows,
+        [
+            "ダメージ",
+        ],
+    )
+
+    kills_raw = find_value(
+        rows,
+        [
+            "確定数",
+        ],
+    )
+
+    killtime_raw = find_value(
+        rows,
+        [
+            "キルタイム",
+        ],
+    )
+
+    fire_frame_raw = find_value(
+        rows,
+        [
+            "連射フレーム",
+            "発射フレーム",
+        ],
+    )
+
+    shots_raw = find_value(
+        rows,
+        [
+            "秒間発射数",
+        ],
+    )
+
+    dps_raw = find_value(
+        rows,
+        [
+            "DPS",
+        ],
+    )
+
+    spread_raw = find_value(
+        rows,
+        [
+            "拡散",
+        ],
+    )
+
+    jump_spread_raw = find_value(
+        rows,
+        [
+            "ジャンプ中拡散",
+        ],
+    )
+
+    reticle_raw = find_value(
+        rows,
+        [
+            "レティクル反応距離",
+        ],
+    )
+
+    blast_radius_raw = find_value(
+        rows,
+        [
+            "爆風半径",
+            "爆風範囲",
+        ],
+    )
+
+    blast_damage_raw = find_value(
+        rows,
+        [
+            "爆風ダメージ",
+        ],
+    )
+
+    direct_damage_raw = find_value(
+        rows,
+        [
+            "直撃ダメージ",
+            "直接ダメージ",
+        ],
+    )
+
+    damage_range_raw = find_value(
+        rows,
+        [
+            "ダメージ射程",
+            "爆風射程",
+            "ダメージ範囲",
+        ],
+    )
+
+    # -----------------------------------------------------
+    # Numbers
+    # -----------------------------------------------------
+
+    effective_max, effective_min = number_range(
+        effective_raw
+    )
+
+    paint_max, _ = number_range(
+        paint_raw
+    )
+
+    damage_max, damage_min = number_range(
+        damage_raw
+    )
+
+    blast_range_max, _ = number_range(
+        damage_range_raw
+    )
+
+    blast_radius = first_number(
+        blast_radius_raw
+    )
+
+    blast_damage = first_number(
+        blast_damage_raw
+    )
+
+    direct_damage = first_number(
+        direct_damage_raw
+    )
+
+    points_num = first_number(
+        points_raw
+    )
+
+    killtime = first_number(
+        killtime_raw
+    )
+
+    fire_frame = first_number(
+        fire_frame_raw
+    )
+
+    shots_per_second = first_number(
+        shots_raw
+    )
+
+    dps = first_number(
+        dps_raw
+    )
+
+    spread = first_number(
+        spread_raw
+    )
+
+    jump_spread = first_number(
+        jump_spread_raw
+    )
+
+    reticle = first_number(
+        reticle_raw
+    )
+
+    # -----------------------------------------------------
+    # Blast range
+    # -----------------------------------------------------
+
+    blast_range = blast_range_max
+
+    if (
+        blast_range is None
+        and blast_radius is not None
+        and effective_max is not None
+    ):
+
+        blast_range = (
+            effective_max
+            + blast_radius
         )
 
+    # -----------------------------------------------------
+    # Fire rate
+    # -----------------------------------------------------
 
-    blast_damage =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "ダメージ（爆風）",
-                    "ダメージ(爆風)"
-                ]
-            )
-        )
+    fire_rate = fire_frame
 
+    if fire_rate is None:
+        fire_rate = shots_per_second
 
-    if direct_damage is not None:
+    # -----------------------------------------------------
+    # Direct damage
+    # -----------------------------------------------------
 
-        if damage_max is None:
+    if (
+        direct_damage is None
+        and damage_max is not None
+    ):
 
-            damage_max =
-                direct_damage
+        direct_damage = damage_max
 
-        if damage_min is None:
+    # -----------------------------------------------------
+    # ID
+    # -----------------------------------------------------
 
-            damage_min =
-                direct_damage
+    weapon_id = re.sub(
+        r"[^a-zA-Z0-9_-]+",
+        "-",
+        name,
+    ).strip("-").lower()
 
+    if not weapon_id:
 
-    kills =
-        find_exact(
-            rows,
-            [
-                "確定数"
-            ]
-        )
-
-
-    fire_rate_text =
-        find_exact(
-            rows,
-            [
-                "連射フレーム"
-            ]
-        )
-
-
-    fire_rate =
-        first_number(
-            fire_rate_text
-        )
-
-
-    shots_per_second =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "秒間発射数"
-                ]
-            )
-        )
-
-
-    kill_time =
-        first_number(
-            find_contains(
-                rows,
-                [
-                    "キルタイム"
-                ]
-            )
-        )
-
-
-    dps =
-        first_number(
-            find_contains(
-                rows,
-                [
-                    "DPS"
-                ]
-            )
-        )
-
-
-    blast_radius =
-        first_number(
-            find_exact(
-                rows,
-                [
-                    "爆風半径"
-                ]
-            )
-        )
-
-
-    start_frame = None
-
-    end_frame = None
-
-
-    if damage_text:
-
-        frame_match =
-            re.search(
-
-                r"\((\d+)F"
-                r"\s*[～~\-]\s*"
-                r"(\d+)F\)",
-
-                damage_text
-
-            )
-
-
-        if frame_match:
-
-            start_frame =
-                int(
-                    frame_match.group(1)
+        weapon_id = (
+            "weapon-"
+            + str(
+                abs(
+                    hash(url)
                 )
+            )
+        )
 
-            end_frame =
-                int(
-                    frame_match.group(2)
-                )
+    # -----------------------------------------------------
+    # Final data
+    # -----------------------------------------------------
 
+    data = {
 
-    weapon_id =
-        hashlib.sha1(
-            url.encode("utf-8")
-        ).hexdigest()[:12]
+        "id": weapon_id,
 
+        "name": name,
 
-    return {
+        "category": category_info[
+            "category"
+        ],
 
-        "id":
-            weapon_id,
+        "sub": sub or "不明",
 
-        "name":
-            name,
+        "special": special or "不明",
 
-        "category":
-            category,
+        "specialPoints": int_or_float(
+            points_num
+        ),
 
-        "sub":
-            sub,
+        "specialPointsRaw": (
+            points_raw or ""
+        ),
 
-        "special":
-            special,
+        "weight": (
+            weight or ""
+        ),
 
-        "specialPoints":
-            special_points,
+        "range": {
 
-        "range":
-            range_value,
+            "effective": int_or_float(
+                effective_max
+            ),
 
-        "maintainRange":
-            maintain_range,
+            "paint": int_or_float(
+                paint_max
+            ),
 
-        "reticleRange":
-            reticle_range,
+            "reticle": int_or_float(
+                reticle
+            ),
 
-        "paintRange":
-            paint_range,
+            "blast": int_or_float(
+                blast_range
+            ),
+        },
 
-        "damageMax":
-            damage_max,
+        "damage": {
 
-        "damageMin":
-            damage_min,
+            "max": int_or_float(
+                damage_max
+            ),
 
-        "damageStartFrame":
-            start_frame,
+            "min": int_or_float(
+                damage_min
+            ),
 
-        "damageEndFrame":
-            end_frame,
+            "direct": int_or_float(
+                direct_damage
+            ),
 
-        "kills":
-            kills,
+            "blast": int_or_float(
+                blast_damage
+            ),
+        },
 
-        "killTime":
-            kill_time,
+        "kills": (
+            kills_raw or ""
+        ),
 
-        "fireRate":
-            fire_rate,
+        "killTime": int_or_float(
+            killtime
+        ),
 
-        "shotsPerSecond":
-            shots_per_second,
+        "fireFrame": int_or_float(
+            fire_frame
+        ),
 
-        "dps":
-            dps,
+        "fireRate": int_or_float(
+            fire_rate
+        ),
 
-        "blastRange":
-            blast_range,
+        "fireRateRaw": (
+            fire_frame_raw or ""
+        ),
 
-        "blastRadius":
-            blast_radius,
+        "shotsPerSecond": int_or_float(
+            shots_per_second
+        ),
 
-        "directDamage":
-            direct_damage,
+        "dps": int_or_float(
+            dps
+        ),
 
-        "blastDamage":
-            blast_damage,
+        "spread": int_or_float(
+            spread
+        ),
 
-        "wikiUrl":
-            url
+        "jumpSpread": int_or_float(
+            jump_spread
+        ),
 
+        "blast": {
+
+            "range": int_or_float(
+                blast_range
+            ),
+
+            "radius": int_or_float(
+                blast_radius
+            ),
+        },
+
+        "damageRaw": (
+            damage_raw or ""
+        ),
+
+        "damageCurve": (
+            extract_damage_curve(
+                damage_raw
+            )
+        ),
+
+        "source": url,
+
+        "sourceName": (
+            "WikiWiki - Splatoon3 Wiki"
+        ),
     }
 
+    return data
+
+
+# =========================================================
+# Duplicate removal
+# =========================================================
+
+def deduplicate(items):
+
+    result = []
+
+    seen = set()
+
+    for item in items:
+
+        key = (
+            normalize(
+                item.get(
+                    "name",
+                    "",
+                )
+            ),
+            item.get(
+                "category",
+                "",
+            ),
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        result.append(item)
+
+    return result
+
+
+# =========================================================
+# Validation
+# =========================================================
+
+def validate(items):
+
+    # Splatoon 3には多数のブキが存在するため、
+    # 取得数が異常に少ない場合は既存JSONを守る。
+    if len(items) < 50:
+
+        raise RuntimeError(
+            "取得したブキ数が少なすぎます: "
+            f"{len(items)}件。\n"
+            "WikiWiki側の構造変更や通信失敗の可能性があるため、"
+            "weapons.jsonを上書きしません。"
+        )
+
+    required = [
+        "id",
+        "name",
+        "category",
+        "range",
+        "damage",
+        "source",
+    ]
+
+    for item in items:
+
+        missing = [
+            key
+            for key in required
+            if key not in item
+        ]
+
+        if missing:
+
+            raise RuntimeError(
+                "必須フィールド不足: "
+                f"{item.get('name')} / {missing}"
+            )
+
+
+# =========================================================
+# Main
+# =========================================================
 
 def main():
 
-    weapon_pages = {}
-
-
-    for category, path in CATEGORIES.items():
-
-        print(
-            "取得カテゴリ:",
-            category
-        )
-
-
-        links =
-            get_weapon_links(
-                path
-            )
-
-
-        for url in links:
-
-            weapon_pages.setdefault(
-                url,
-                category
-            )
-
-
     print(
-        "発見したブキページ:",
-        len(weapon_pages)
+        "=== Splatoon 3 Weapon Scraper ==="
     )
 
+    print(
+        f"Source: {WIKI_ROOT}"
+    )
 
-    inki_links =
-        get_inkipedia_links()
+    # -----------------------------------------------------
+    # Discover
+    # -----------------------------------------------------
 
+    discovered = (
+        discover_weapon_urls()
+    )
+
+    if not discovered:
+
+        raise RuntimeError(
+            "ブキページを1件も発見できませんでした。"
+        )
+
+    # -----------------------------------------------------
+    # Parse
+    # -----------------------------------------------------
 
     weapons = []
 
+    failures = []
+
+    total = len(
+        discovered
+    )
 
     for index, (
         url,
-        category
+        info,
     ) in enumerate(
         sorted(
-            weapon_pages.items()
+            discovered.items()
         ),
-        start=1
+        start=1,
     ):
+
+        print(
+            f"[{index}/{total}] "
+            f"{info['name']}"
+        )
 
         try:
 
-            weapon =
-                parse_weapon(
-                    url,
-                    category
-                )
-
-
-            weapon[
-                "inkipediaUrl"
-            ] = inki_links.get(
-                weapon["name"]
+            weapon = parse_weapon(
+                url,
+                info,
             )
-
 
             weapons.append(
                 weapon
             )
 
+        except Exception as exc:
 
-            print(
-
-                f"[{index}/"
-                f"{len(weapon_pages)}]"
-                f" {weapon['name']}"
-
+            failures.append(
+                {
+                    "url": url,
+                    "name": info[
+                        "name"
+                    ],
+                    "error": str(exc),
+                }
             )
 
-
-        except Exception as error:
-
             print(
-                "取得失敗:",
-                url,
-                error
+                f"  -> ERROR: {exc}"
             )
 
+        time.sleep(0.2)
 
-        time.sleep(.08)
+    # -----------------------------------------------------
+    # Cleanup
+    # -----------------------------------------------------
 
+    weapons = deduplicate(
+        weapons
+    )
 
     weapons.sort(
-
-        key=lambda weapon: (
-
-            weapon["category"],
-            weapon["name"]
-
+        key=lambda x: (
+            x.get(
+                "category",
+                "",
+            ),
+            x.get(
+                "name",
+                "",
+            ),
         )
-
     )
-
-
-    with open(
-        "data/weapons.json",
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-
-            weapons,
-            file,
-
-            ensure_ascii=False,
-
-            indent=2
-
-        )
-
 
     print(
-        "保存完了:",
-        len(weapons),
-        "件"
+        "[result] "
+        f"success={len(weapons)} "
+        f"failure={len(failures)}"
     )
 
+    # -----------------------------------------------------
+    # Validation
+    # -----------------------------------------------------
+
+    validate(
+        weapons
+    )
+
+    # -----------------------------------------------------
+    # Save
+    # -----------------------------------------------------
+
+    OUTPUT.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with OUTPUT.open(
+        "w",
+        encoding="utf-8",
+    ) as fp:
+
+        json.dump(
+            weapons,
+            fp,
+            ensure_ascii=False,
+            indent=2,
+        )
+
+        fp.write(
+            "\n"
+        )
+
+    print(
+        f"[saved] {OUTPUT} "
+        f"({len(weapons)} weapons)"
+    )
+
+    # -----------------------------------------------------
+    # Failed pages
+    # -----------------------------------------------------
+
+    if failures:
+
+        print(
+            "[warning] "
+            "Some pages failed:"
+        )
+
+        for failure in failures[:20]:
+
+            print(
+                f"  - "
+                f"{failure['name']}: "
+                f"{failure['error']}"
+            )
+
+
+# =========================================================
+# Entry point
+# =========================================================
 
 if __name__ == "__main__":
-
     main()
