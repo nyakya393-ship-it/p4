@@ -1,0 +1,869 @@
+*{
+    box-sizing:border-box;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+
+    color:#ffffff;
+
+    background:
+        radial-gradient(
+            circle at 20% 0%,
+            #29292e 0%,
+            #101012 45%,
+            #09090a 100%
+        );
+
+    min-height:100vh;
+
+}
+
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:20;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+    padding:
+        15px
+        18px;
+
+    background:
+        rgba(10,10,12,.94);
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid #333338;
+
+}
+
+
+.eyebrow{
+
+    font-size:10px;
+
+    font-weight:900;
+
+    letter-spacing:.18em;
+
+    opacity:.5;
+
+}
+
+
+.header h1{
+
+    margin:3px 0 0;
+
+    font-size:21px;
+
+}
+
+
+.data-status{
+
+    padding:
+        7px
+        10px;
+
+    border:
+        1px solid #414146;
+
+    border-radius:999px;
+
+    font-size:11px;
+
+    white-space:nowrap;
+
+}
+
+
+.container{
+
+    width:
+        min(1280px,100%);
+
+    margin:auto;
+
+    padding:14px;
+
+}
+
+
+.control-card{
+
+    padding:12px;
+
+    margin-bottom:14px;
+
+    background:#17171a;
+
+    border:
+        1px solid #303036;
+
+    border-radius:16px;
+
+}
+
+
+#search{
+
+    width:100%;
+
+    padding:
+        13px
+        14px;
+
+    color:white;
+
+    background:#0e0e10;
+
+    border:
+        1px solid #3b3b40;
+
+    border-radius:11px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+#search:focus{
+
+    border-color:#ffffff;
+
+}
+
+
+.categories{
+
+    display:flex;
+
+    gap:7px;
+
+    padding-top:10px;
+
+    overflow-x:auto;
+
+}
+
+
+.category-button{
+
+    flex:
+        0 0 auto;
+
+    padding:
+        8px
+        12px;
+
+    color:#ddd;
+
+    background:#222226;
+
+    border:
+        1px solid #3b3b40;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+}
+
+
+.category-button.active{
+
+    color:#111;
+
+    background:#fff;
+
+    border-color:#fff;
+
+}
+
+
+.main-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        300px
+        minmax(0,1fr);
+
+    gap:14px;
+
+}
+
+
+.weapon-panel{
+
+    align-self:start;
+
+    position:sticky;
+
+    top:82px;
+
+    max-height:
+        calc(100vh - 98px);
+
+    padding:12px;
+
+    overflow:hidden;
+
+    background:#17171a;
+
+    border:
+        1px solid #303036;
+
+    border-radius:16px;
+
+}
+
+
+.panel-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:10px;
+
+}
+
+
+.panel-header h2{
+
+    margin:0;
+
+    font-size:15px;
+
+}
+
+
+.panel-header span{
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.weapon-list{
+
+    display:grid;
+
+    gap:6px;
+
+    overflow-y:auto;
+
+    max-height:
+        calc(100vh - 150px);
+
+}
+
+
+.weapon-button{
+
+    width:100%;
+
+    padding:11px;
+
+    text-align:left;
+
+    color:#eee;
+
+    background:#202024;
+
+    border:
+        1px solid transparent;
+
+    border-radius:11px;
+
+    cursor:pointer;
+
+}
+
+
+.weapon-button:hover{
+
+    background:#29292e;
+
+}
+
+
+.weapon-button.active{
+
+    background:#303036;
+
+    border-color:#fff;
+
+}
+
+
+.weapon-name{
+
+    font-size:14px;
+
+    font-weight:800;
+
+}
+
+
+.weapon-meta{
+
+    margin-top:4px;
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.detail{
+
+    min-width:0;
+
+}
+
+
+.detail-grid{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+
+.card{
+
+    padding:16px;
+
+    background:#17171a;
+
+    border:
+        1px solid #303036;
+
+    border-radius:16px;
+
+}
+
+
+.weapon-header{
+
+    padding:18px;
+
+}
+
+
+.weapon-category{
+
+    font-size:12px;
+
+    opacity:.5;
+
+}
+
+
+.weapon-header h2{
+
+    margin:
+        4px
+        0
+        0;
+
+    font-size:28px;
+
+}
+
+
+.kit{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-top:13px;
+
+}
+
+
+.tag{
+
+    padding:
+        7px
+        9px;
+
+    background:#242428;
+
+    border:
+        1px solid #3b3b40;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+}
+
+
+.source{
+
+    margin-top:12px;
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.source a{
+
+    color:#fff;
+
+}
+
+
+.section-title{
+
+    margin:
+        0
+        0
+        13px;
+
+    font-size:15px;
+
+}
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:8px;
+
+}
+
+
+.stat{
+
+    padding:10px;
+
+    background:#202024;
+
+    border-radius:10px;
+
+}
+
+
+.stat-label{
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.stat-value{
+
+    margin-top:3px;
+
+    font-size:18px;
+
+    font-weight:900;
+
+}
+
+
+.range-area{
+
+    padding-top:20px;
+
+}
+
+
+.range-axis{
+
+    position:relative;
+
+    height:45px;
+
+    margin:
+        0
+        5px
+        35px;
+
+    border-bottom:
+        2px solid #666;
+
+}
+
+
+.range-bar{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    height:10px;
+
+    border-radius:999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #777
+        );
+
+}
+
+
+.range-marker{
+
+    position:absolute;
+
+    bottom:-15px;
+
+    width:2px;
+
+    height:28px;
+
+    background:#fff;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.range-label{
+
+    position:absolute;
+
+    bottom:-38px;
+
+    transform:
+        translateX(-50%);
+
+    font-size:11px;
+
+    white-space:nowrap;
+
+}
+
+
+.damage-list{
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+
+.damage-row{
+
+    display:grid;
+
+    grid-template-columns:
+        70px
+        1fr
+        50px;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:12px;
+
+}
+
+
+.damage-track{
+
+    height:15px;
+
+    overflow:hidden;
+
+    background:#29292e;
+
+    border-radius:999px;
+
+}
+
+
+.damage-fill{
+
+    height:100%;
+
+    background:#fff;
+
+    border-radius:999px;
+
+}
+
+
+.blast-area{
+
+    position:relative;
+
+    height:210px;
+
+    overflow:hidden;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #202024 0,
+            #202024 1px,
+            transparent 1px,
+            transparent 10%
+        );
+
+    border-bottom:
+        1px solid #555;
+
+}
+
+
+.blast-line{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:45px;
+
+    height:3px;
+
+    background:#fff;
+
+}
+
+
+.blast-circle{
+
+    position:absolute;
+
+    bottom:45px;
+
+    border:
+        2px solid #fff;
+
+    border-radius:50%;
+
+    background:#fff1;
+
+    transform:
+        translateY(50%);
+
+}
+
+
+.blast-caption{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:10px;
+
+    font-size:11px;
+
+    opacity:.7;
+
+}
+
+
+.chart{
+
+    display:block;
+
+    width:100%;
+
+    height:230px;
+
+    background:#111113;
+
+    border:
+        1px solid #29292e;
+
+    border-radius:11px;
+
+}
+
+
+.spec-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:7px;
+
+}
+
+
+.spec{
+
+    padding:9px;
+
+    background:#202024;
+
+    border-radius:9px;
+
+}
+
+
+.spec b{
+
+    display:block;
+
+    font-size:11px;
+
+    opacity:.5;
+
+}
+
+
+.spec span{
+
+    font-size:14px;
+
+}
+
+
+.note{
+
+    margin-top:10px;
+
+    font-size:11px;
+
+    line-height:1.6;
+
+    opacity:.5;
+
+}
+
+
+.empty{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    color:#888;
+
+    background:#17171a;
+
+    border:
+        1px solid #303036;
+
+    border-radius:16px;
+
+}
+
+
+@media(max-width:850px){
+
+    .main-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .weapon-panel{
+
+        position:static;
+
+        max-height:none;
+
+    }
+
+    .weapon-list{
+
+        max-height:260px;
+
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .header{
+
+        padding:13px;
+
+    }
+
+    .header h1{
+
+        font-size:18px;
+
+    }
+
+    .container{
+
+        padding:9px;
+
+    }
+
+    .stats{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .weapon-header h2{
+
+        font-size:23px;
+
+    }
+
+}
