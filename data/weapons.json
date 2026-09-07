@@ -1,83 +1,4629 @@
 [
   {
-    "id": "seed-wakaba",
+    "id": "52",
+    "name": ".52ガロンデコ",
+    "category": "ワイパー",
+    "sub": "カーリングボム",
+    "special": "スミナガシート",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.7,
+      "paint": 3.5,
+      "reticle": 2.6,
+      "blast": null
+    },
+    "damage": {
+      "max": 52,
+      "min": 30,
+      "direct": 52,
+      "blast": null
+    },
+    "kills": "2.6 カス当たり射程 2.8",
+    "killTime": 0.167,
+    "fireFrame": 9,
+    "fireRate": 9,
+    "fireRateRaw": "9F（0.150秒） 秒間発射数 6.7発/秒",
+    "shotsPerSecond": 6.7,
+    "dps": 346.67,
+    "spread": 6,
+    "jumpSpread": 12,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "52.0 ～ 30.0 （11F～27F） 確定数 2 ～4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/.52%E3%82%AC%E3%83%AD%E3%83%B3%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "96",
+    "name": ".96ガロンデコ",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "テイオウイカ",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.6,
+      "paint": 4.6,
+      "reticle": 3.2,
+      "blast": null
+    },
+    "damage": {
+      "max": 62,
+      "min": 35,
+      "direct": 62,
+      "blast": null
+    },
+    "kills": "3.5 カス当たり射程 3.7",
+    "killTime": 0.217,
+    "fireFrame": 12,
+    "fireRate": 12,
+    "fireRateRaw": "12F （0.200秒） 秒間発射数 5.0発/秒",
+    "shotsPerSecond": 5,
+    "dps": 310,
+    "spread": 4,
+    "jumpSpread": 11.35,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "62.0 ～ 35.0 （9F～25F） 確定数 2～3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/.96%E3%82%AC%E3%83%AD%E3%83%B3%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "14",
+    "name": "14式竹筒銃・乙",
+    "category": "ワイパー",
+    "sub": "タンサンボム",
+    "special": "デコイチラシ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 5,
+      "paint": 5,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 85,
+      "min": 40,
+      "direct": 85,
+      "blast": null
+    },
+    "kills": "4～2",
+    "killTime": 0.833,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.80％（35発）",
+    "shotsPerSecond": 2.3,
+    "dps": 184.6,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "85 初速 40.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/14%E5%BC%8F%E7%AB%B9%E7%AD%92%E9%8A%83%E3%83%BB%E4%B9%99",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "24",
+    "name": "24式張替傘・乙",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "ウルトラチャクチ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.5,
+      "paint": 3.5,
+      "reticle": 2.5,
+      "blast": 3
+    },
+    "damage": {
+      "max": 90,
+      "min": 10,
+      "direct": 90,
+      "blast": null
+    },
+    "kills": "2～8",
+    "killTime": 0.767,
+    "fireFrame": 34,
+    "fireRate": 34,
+    "fireRateRaw": "34F（0.566秒） 秒間発射数 1.66発/秒",
+    "shotsPerSecond": 1.66,
+    "dps": 158.8,
+    "spread": 3,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3,
+      "radius": null
+    },
+    "damageRaw": "90.0～10.0 確定数 2～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/24%E5%BC%8F%E5%BC%B5%E6%9B%BF%E5%82%98%E3%83%BB%E4%B9%99",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "4k",
+    "name": "4Kスコープ",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "ホップソナー",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "重量級",
+    "range": {
+      "effective": 7.1,
+      "paint": 7.1,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 180,
+      "min": 96,
+      "direct": 180,
+      "blast": null
+    },
+    "kills": "3～2",
+    "killTime": 1.6,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.61,
+    "dps": 110.2,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "180.0 初速 96.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/4K%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "h3",
+    "name": "H3リールガン",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "エナジースタンド",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.5,
+      "paint": 4.5,
+      "reticle": 3.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 45,
+      "min": 22.5,
+      "direct": 45,
+      "blast": null
+    },
+    "kills": "3.5",
+    "killTime": 0.183,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F ［32F］ 射撃後硬直時間 21F",
+    "shotsPerSecond": null,
+    "dps": 253.125,
+    "spread": 1,
+    "jumpSpread": 1,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "45.0～22.5 ［135.0～67.5］ （8F～40F） 確定数 （トリガー数） 3～5（1～2）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/H3%E3%83%AA%E3%83%BC%E3%83%AB%E3%82%AC%E3%83%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "h3-snak",
+    "name": "H3リールガンSNAK",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.5,
+      "paint": 4.5,
+      "reticle": 3.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 45,
+      "min": 22.5,
+      "direct": 45,
+      "blast": null
+    },
+    "kills": "3.5",
+    "killTime": 0.183,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F ［32F］ 射撃後硬直時間 21F",
+    "shotsPerSecond": null,
+    "dps": 253.125,
+    "spread": 1,
+    "jumpSpread": 1,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "45.0～22.5 ［135.0～67.5］ （8F～40F） 確定数 （トリガー数） 3～5（1～2）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/H3%E3%83%AA%E3%83%BC%E3%83%AB%E3%82%AC%E3%83%B3SNAK",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "l3-d",
+    "name": "L3リールガンD",
+    "category": "ワイパー",
+    "sub": "クイックボム",
+    "special": "ウルトラハンコ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.2,
+      "paint": 4.1,
+      "reticle": 2.9,
+      "blast": null
+    },
+    "damage": {
+      "max": 31,
+      "min": 15.5,
+      "direct": 31,
+      "blast": null
+    },
+    "kills": "3.2",
+    "killTime": 0.317,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F ［18F］ 射撃後硬直時間 9F",
+    "shotsPerSecond": null,
+    "dps": 310,
+    "spread": 1,
+    "jumpSpread": 6,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "31.0～15.5 ［93.0～46.5］ （8F～40F） 確定数 （トリガー数） 4～7（2～3）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/L3%E3%83%AA%E3%83%BC%E3%83%AB%E3%82%AC%E3%83%B3D",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "l3",
+    "name": "L3リールガン箔",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "ジェットパック",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.2,
+      "paint": 4.1,
+      "reticle": 2.9,
+      "blast": null
+    },
+    "damage": {
+      "max": 31,
+      "min": 15.5,
+      "direct": 31,
+      "blast": null
+    },
+    "kills": "3.2",
+    "killTime": 0.317,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F ［18F］ 射撃後硬直時間 9F",
+    "shotsPerSecond": null,
+    "dps": 310,
+    "spread": 1,
+    "jumpSpread": 6,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "31.0～15.5 ［93.0～46.5］ （8F～40F） 確定数 （トリガー数） 4～7（2～3）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/L3%E3%83%AA%E3%83%BC%E3%83%AB%E3%82%AC%E3%83%B3%E7%AE%94",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "lact",
+    "name": "LACT",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "サメライド",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.2,
+      "paint": 2.4,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 45,
+      "min": 30,
+      "direct": 45,
+      "blast": null
+    },
+    "kills": "1～4 射撃継続時間 6.533秒→9.450秒",
+    "killTime": 0.4,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 385.7,
+    "spread": 3,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0→45.0 インク消費量（装弾数） 3.50%（28発）→ 4.68%（21発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/LACT-450%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "n",
+    "name": "N",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "エナジースタンド",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.5,
+      "paint": 3.3,
+      "reticle": 2.3,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 15,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "2.5",
+    "killTime": 0.267,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 360,
+    "spread": 4.75,
+    "jumpSpread": 12,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～15.0 （8F～24F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/N-ZAP85",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "pet",
+    "name": "PETシューター レプリカ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 3.4,
+      "reticle": 2.4,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "2.5 カス当たり射程 2.7",
+    "killTime": 0.217,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 360,
+    "spread": 4.86,
+    "jumpSpread": 11.66,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （8F～40F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/PET%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "r",
+    "name": "R",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "エナジースタンド",
+    "specialPoints": 220,
+    "specialPointsRaw": "220p",
+    "weight": "中量級",
+    "range": {
+      "effective": 6.3,
+      "paint": 6.3,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 68,
+      "min": 7.5,
+      "direct": 68,
+      "blast": null
+    },
+    "kills": "2 射撃継続時間 4.867秒",
+    "killTime": 1.55,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.11％（47発）",
+    "shotsPerSecond": 4.3,
+    "dps": 139.7,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "68.0 インク消費量（装弾数） 7.5％×5発 *1 （10+3発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/R-PEN%EF%BC%8F5H",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "r-wntr",
+    "name": "RブラスターエリートWNTR",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "エナジースタンド",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.6,
+      "paint": 4,
+      "reticle": null,
+      "blast": 4.2
+    },
+    "damage": {
+      "max": 85,
+      "min": 2,
+      "direct": 85,
+      "blast": null
+    },
+    "kills": "2～3",
+    "killTime": 0.867,
+    "fireFrame": 40,
+    "fireRate": 40,
+    "fireRateRaw": "40F（0.667秒） 秒間発射数 1.5発/秒",
+    "shotsPerSecond": 1.5,
+    "dps": 127.5,
+    "spread": 0,
+    "jumpSpread": 8,
+    "blast": {
+      "range": 4.2,
+      "radius": 0.665
+    },
+    "damageRaw": "85.0 確定数 （直撃・爆風） 2～3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/R%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%AA%E3%83%BC%E3%83%88WNTR",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "r",
+    "name": "Rブラスターエリートデコ",
+    "category": "ワイパー",
+    "sub": "ラインマーカー",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.6,
+      "paint": 4,
+      "reticle": null,
+      "blast": 4.2
+    },
+    "damage": {
+      "max": 85,
+      "min": 2,
+      "direct": 85,
+      "blast": null
+    },
+    "kills": "2～3",
+    "killTime": 0.867,
+    "fireFrame": 40,
+    "fireRate": 40,
+    "fireRateRaw": "40F（0.667秒） 秒間発射数 1.5発/秒",
+    "shotsPerSecond": 1.5,
+    "dps": 127.5,
+    "spread": 0,
+    "jumpSpread": 8,
+    "blast": {
+      "range": 4.2,
+      "radius": 0.665
+    },
+    "damageRaw": "85.0 確定数 （直撃・爆風） 2～3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/R%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%A8%E3%83%AA%E3%83%BC%E3%83%88%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "s",
+    "name": "S",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "サメライド",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 3.2,
+      "reticle": null,
+      "blast": 3.3
+    },
+    "damage": {
+      "max": 125,
+      "min": 1,
+      "direct": 125,
+      "blast": null
+    },
+    "kills": "1～2",
+    "killTime": 0.233,
+    "fireFrame": 55,
+    "fireRate": 55,
+    "fireRateRaw": "55F（0.935秒） 秒間発射数 1.09発/秒",
+    "shotsPerSecond": 1.09,
+    "dps": 136.36,
+    "spread": 0,
+    "jumpSpread": 8,
+    "blast": {
+      "range": 3.3,
+      "radius": 0.207
+    },
+    "damageRaw": "125.0 確定数 （直撃・爆風） 1～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/S-BLAST92",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1812609373530701858",
+    "name": "もみじシューター",
+    "category": "ワイパー",
+    "sub": "トーピード",
+    "special": "ホップソナー",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 3.5,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "2.3",
+    "killTime": 0.267,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 336,
+    "spread": 11.66,
+    "jumpSpread": 14.58,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 （8F～24F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%82%E3%81%BF%E3%81%98%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5064054164459010353",
     "name": "わかばシューター",
-    "category": "シューター",
+    "category": "ワイパー",
     "sub": "スプラッシュボム",
     "special": "グレートバリア",
     "specialPoints": 180,
-    "range": 2.3,
-    "maintainRange": 2.3,
-    "reticleRange": 2.1,
-    "paintRange": 3.5,
-    "damageMax": 28,
-    "damageMin": 14,
-    "damageStartFrame": 8,
-    "damageEndFrame": 24,
-    "kills": "4～8",
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 3.5,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "2.3",
     "killTime": 0.267,
+    "fireFrame": 5,
     "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
     "shotsPerSecond": 12,
     "dps": 336,
-    "blastRange": null,
-    "blastRadius": null,
-    "directDamage": null,
-    "blastDamage": null,
-    "wikiUrl": "https://wikiwiki.jp/splatoon3mix/ブキ/わかばシューター",
-    "inkipediaUrl": null
+    "spread": 11.66,
+    "jumpSpread": 14.58,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 （8F～24F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%8F%E3%81%8B%E3%81%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
   },
   {
-    "id": "seed-splattershot",
-    "name": "スプラシューター",
-    "category": "シューター",
+    "id": "weapon-930266636590478936",
+    "name": "アメフラシ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 0.4,
+      "min": 0.4,
+      "direct": 0.4,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": 4.167,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 24,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "0.4/F",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%A2%E3%83%A1%E3%83%95%E3%83%A9%E3%82%B7",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1652562172746732676",
+    "name": "ウルトラチャクチ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 2.9,
+      "paint": null,
+      "reticle": null,
+      "blast": 3.4
+    },
+    "damage": {
+      "max": 220,
+      "min": 1.28,
+      "direct": 220,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.4,
+      "radius": null
+    },
+    "damageRaw": "220.0 ダメージ半径（近距離） 1.28",
+    "damageCurve": [
+      {
+        "distance": 220.0,
+        "damage": 1.28
+      }
+    ],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%A6%E3%83%AB%E3%83%88%E3%83%A9%E3%83%81%E3%83%A3%E3%82%AF%E3%83%81",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1378220356935733123",
+    "name": "エナジースタンド",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%89",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2654775421458322069",
+    "name": "オーダーシェルター レプリカ",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "トリプルトルネード",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2,
+      "paint": 3.5,
+      "reticle": 2.2,
+      "blast": 2.5
+    },
+    "damage": {
+      "max": 81,
+      "min": 10.8,
+      "direct": 81,
+      "blast": null
+    },
+    "kills": "2～10",
+    "killTime": 0.683,
+    "fireFrame": 29,
+    "fireRate": 29,
+    "fireRateRaw": "29F（0.483秒） 秒間発射数 2.1発/秒",
+    "shotsPerSecond": 2.1,
+    "dps": 167.6,
+    "spread": 7.2,
+    "jumpSpread": null,
+    "blast": {
+      "range": 2.5,
+      "radius": null
+    },
+    "damageRaw": "81.0～10.8 確定数 2～10",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BF%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8522029318025364311",
+    "name": "オーダーストリンガー レプリカ",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 6.1,
+      "reticle": null,
+      "blast": 3.41
+    },
+    "damage": {
+      "max": 35,
+      "min": 30,
+      "direct": 35,
+      "blast": null
+    },
+    "kills": "1～4 射撃継続時間 7.000秒→12.000秒",
+    "killTime": 0.567,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": 11.4,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.41,
+      "radius": 0.41
+    },
+    "damageRaw": "30.0→35.0 インク消費量（装弾数） 5.0%（20発）→ 6.0%（16発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AC%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6404752920234893078",
+    "name": "オーダースロッシャー レプリカ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 220,
+    "specialPointsRaw": "220p",
+    "weight": "中量級",
+    "range": {
+      "effective": 70,
+      "paint": 3.4,
+      "reticle": 2.8,
+      "blast": 3.1
+    },
+    "damage": {
+      "max": 70,
+      "min": 50,
+      "direct": 70,
+      "blast": null
+    },
+    "kills": "2",
+    "killTime": 0.717,
+    "fireFrame": 29,
+    "fireRate": 29,
+    "fireRateRaw": "29F 秒間発射数 2.1発/秒",
+    "shotsPerSecond": 2.1,
+    "dps": 144.8,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.1,
+      "radius": null
+    },
+    "damageRaw": "70.0～50.0 確定数 2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%82%B9%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5334267062443294765",
+    "name": "オーダーブラシ レプリカ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ショクワンダー",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 2.6,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 40,
+      "min": 10,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3～10",
+    "killTime": 0.367,
+    "fireFrame": 11,
+    "fireRate": 11,
+    "fireRateRaw": "11F（0.183秒） （初弾 -1F） 秒間連射数 5.5発/秒",
+    "shotsPerSecond": null,
+    "dps": 218.2,
+    "spread": 24,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "40.0～10.0 （インク不足時 20.0） 確定数 3～10",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%96%E3%83%A9%E3%82%B7%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5094389198407904545",
+    "name": "オーダーマニューバー レプリカ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "カニタンク",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.5,
+      "paint": 3.3,
+      "reticle": 2.25,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 15,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "2.4",
+    "killTime": 0.267,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 360,
+    "spread": 2,
+    "jumpSpread": 7.5,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～15.0 （7F～15F） 確定数 4～7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%9E%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3717503679213776429",
+    "name": "オーダーワイパー レプリカ",
+    "category": "ワイパー",
+    "sub": "クイックボム",
+    "special": "ショクワンダー",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.8,
+      "paint": 4.8,
+      "reticle": 4,
+      "blast": null
+    },
+    "damage": {
+      "max": 35,
+      "min": 3,
+      "direct": 35,
+      "blast": null
+    },
+    "kills": "3",
+    "killTime": 1.083,
+    "fireFrame": 26,
+    "fireRate": 26,
+    "fireRateRaw": "26F（0.433秒） 秒間発射数 2.31発",
+    "shotsPerSecond": 2.31,
+    "dps": 80.8,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "35.0 確定数 （インク弾） 3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%91%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6968380585474253127",
+    "name": "オーバーフロッシャーデコ",
+    "category": "ワイパー",
+    "sub": "ラインマーカー",
+    "special": "テイオウイカ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 5.4,
+      "paint": 5.4,
+      "reticle": 2.4,
+      "blast": null
+    },
+    "damage": {
+      "max": 128,
+      "min": 32,
+      "direct": 128,
+      "blast": null
+    },
+    "kills": "4.9 確定数 維持射程 ( 曲射 なし) 4.7",
+    "killTime": 0.383,
+    "fireFrame": 32,
+    "fireRate": 32,
+    "fireRateRaw": "32F (5F×3+17F) 秒間発射数 7.5発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 240,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "32.0 ［128.0］ 確定数 ［トリガー数］ 4 ［1トリガー］",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%95%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6359629230700504278",
+    "name": "カーボンローラーデコ",
+    "category": "ワイパー",
+    "sub": "クイックボム",
+    "special": "ウルトラショット",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2,
+      "paint": 2,
+      "reticle": null,
+      "blast": 1.7
+    },
+    "damage": {
+      "max": 1.7,
+      "min": 1.6,
+      "direct": 1.7,
+      "blast": null
+    },
+    "kills": "1～4 (～8 *2 )",
+    "killTime": null,
+    "fireFrame": 31,
+    "fireRate": 31,
+    "fireRateRaw": "31F（0.516秒） DPS 193.55/秒",
+    "shotsPerSecond": null,
+    "dps": 193.55,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 1.7,
+      "radius": null
+    },
+    "damageRaw": "1.6 カス当たり射程 1.7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-753991796704012073",
+    "name": "カーリングボム",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 180,
+      "min": 0.32,
+      "direct": 180,
+      "blast": 30
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "180.0 ダメージ半径（近距離） 0.32～0.92",
+    "damageCurve": [
+      {
+        "distance": 180.0,
+        "damage": 0.32
+      }
+    ],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%9C%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "ff",
+    "name": "ガエンFF",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.1,
+      "paint": 5,
+      "reticle": 3.8,
+      "blast": null
+    },
+    "damage": {
+      "max": 25.5,
+      "min": 12.8,
+      "direct": 25.5,
+      "blast": null
+    },
+    "kills": "3.8",
+    "killTime": 0.417,
+    "fireFrame": 8,
+    "fireRate": 8,
+    "fireRateRaw": "8F（0.133秒） 秒間発射数 7.5発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 191.3,
+    "spread": 2.5,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "25.5～12.8 （9F～17F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AC%E3%82%A8%E3%83%B3FF",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6788734401020034353",
+    "name": "キャンピングシェルター",
+    "category": "ワイパー",
+    "sub": "ジャンプビーコン",
+    "special": "キューインキ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "重量級",
+    "range": {
+      "effective": 1.9,
+      "paint": 4,
+      "reticle": 2.8,
+      "blast": 3.1
+    },
+    "damage": {
+      "max": 119,
+      "min": 17,
+      "direct": 119,
+      "blast": null
+    },
+    "kills": "1～6",
+    "killTime": 0.233,
+    "fireFrame": 51,
+    "fireRate": 51,
+    "fireRateRaw": "51F（0.850秒） 秒間発射数 1.2発/秒",
+    "shotsPerSecond": 1.2,
+    "dps": 140,
+    "spread": 7,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.1,
+      "radius": null
+    },
+    "damageRaw": "119.0～17.0 確定数 1～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%94%E3%83%B3%E3%82%B0%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "crem",
+    "name": "キャンピングシェルターCREM",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "デコイチラシ",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "重量級",
+    "range": {
+      "effective": 1.9,
+      "paint": 4,
+      "reticle": 2.8,
+      "blast": 3.1
+    },
+    "damage": {
+      "max": 119,
+      "min": 17,
+      "direct": 119,
+      "blast": null
+    },
+    "kills": "1～6",
+    "killTime": 0.233,
+    "fireFrame": 51,
+    "fireRate": 51,
+    "fireRateRaw": "51F（0.850秒） 秒間発射数 1.2発/秒",
+    "shotsPerSecond": 1.2,
+    "dps": 140,
+    "spread": 7,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.1,
+      "radius": null
+    },
+    "damageRaw": "119.0～17.0 確定数 1～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%94%E3%83%B3%E3%82%B0%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BF%E3%83%BCCREM",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-83047031915294558",
+    "name": "キューインキ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "17F（0.283秒） *2",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 3.6,
+      "paint": null,
+      "reticle": null,
+      "blast": 4.8
+    },
+    "damage": {
+      "max": 1100,
+      "min": 1100,
+      "direct": 1100,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 4.8,
+      "radius": 1.2
+    },
+    "damageRaw": "約1100.0ダメージ",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%AD%E3%83%A5%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%AD",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8669654072796910822",
+    "name": "クアッドホッパーホワイト",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "ショクワンダー",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.8,
+      "paint": 3.8,
+      "reticle": 2.5,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "2.5",
+    "killTime": 0.317,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 280,
+    "spread": 7.4,
+    "jumpSpread": 12.8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 （8F～16F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%82%A2%E3%83%83%E3%83%89%E3%83%9B%E3%83%83%E3%83%91%E3%83%BC%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7122895873726526849",
+    "name": "クイックボム",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 5,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 25,
+      "min": 1,
+      "direct": 60,
+      "blast": 35
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "25.0 *1 塗り面積 15p",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%9C%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6604348532168719908",
+    "name": "クマサン印のストリンガー",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 3.4,
+      "paint": 3.6,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 72,
+      "min": 35,
+      "direct": 72,
+      "blast": null
+    },
+    "kills": "3～2",
+    "killTime": 0.967,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 859.1,
+    "spread": 33,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "35.0→72.0 （315.0→648.0） 確定数 3～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%9E%E3%82%B5%E3%83%B3%E5%8D%B0%E3%81%AE%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AC%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8116964345788935703",
+    "name": "クマサン印のスロッシャー",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 4.7,
+      "paint": 5.2,
+      "reticle": 4.2,
+      "blast": 4.7
+    },
+    "damage": {
+      "max": 360,
+      "min": 1,
+      "direct": 360,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 0.517,
+    "fireFrame": 45,
+    "fireRate": 45,
+    "fireRateRaw": "45F（0.750） 秒間発射数 1.3発",
+    "shotsPerSecond": 1.3,
+    "dps": 480,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 4.7,
+      "radius": null
+    },
+    "damageRaw": "360.0 確定数 （直撃） 1",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%9E%E3%82%B5%E3%83%B3%E5%8D%B0%E3%81%AE%E3%82%B9%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3043667236135641918",
+    "name": "クマサン印のブラスター",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 1.6,
+      "paint": 2,
+      "reticle": 1.7,
+      "blast": 2.2
+    },
+    "damage": {
+      "max": 50,
+      "min": 2,
+      "direct": 50,
+      "blast": null
+    },
+    "kills": "2",
+    "killTime": 0.167,
+    "fireFrame": 9,
+    "fireRate": 9,
+    "fireRateRaw": "9F（0.150秒） 秒間発射数 6.7発/秒",
+    "shotsPerSecond": 6.7,
+    "dps": 333.33,
+    "spread": 0,
+    "jumpSpread": 10,
+    "blast": {
+      "range": 2.2,
+      "radius": 0.7
+    },
+    "damageRaw": "50.0 確定数 （直撃） 2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%9E%E3%82%B5%E3%83%B3%E5%8D%B0%E3%81%AE%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6082727577547067197",
+    "name": "クマサン印のローラー",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "重",
+    "range": {
+      "effective": 1,
+      "paint": 1.8,
+      "reticle": null,
+      "blast": 0.56
+    },
+    "damage": {
+      "max": 150,
+      "min": 50,
+      "direct": 150,
+      "blast": null
+    },
+    "kills": "1～4",
+    "killTime": null,
+    "fireFrame": 32,
+    "fireRate": 32,
+    "fireRateRaw": "32F（0.533秒） DPS 281.25/秒",
+    "shotsPerSecond": null,
+    "dps": 281.25,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 0.56,
+      "radius": null
+    },
+    "damageRaw": "150.0～50.0 (～25.0 *1 ) （インク不足時 ×0.25） 確定数 1～4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%9E%E3%82%B5%E3%83%B3%E5%8D%B0%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2830596264934205104",
+    "name": "クラッシュブラスター",
+    "category": "ワイパー",
     "sub": "スプラッシュボム",
     "special": "ウルトラショット",
-    "specialPoints": 200,
-    "range": 2.6,
-    "maintainRange": 2.5,
-    "reticleRange": 2.4,
-    "paintRange": 3.4,
-    "damageMax": 36,
-    "damageMin": 18,
-    "damageStartFrame": 8,
-    "damageEndFrame": 40,
-    "kills": "3～6",
-    "killTime": 0.217,
-    "fireRate": 6,
-    "shotsPerSecond": 10,
-    "dps": 360,
-    "blastRange": null,
-    "blastRadius": null,
-    "directDamage": null,
-    "blastDamage": null,
-    "wikiUrl": "https://wikiwiki.jp/splatoon3mix/ブキ/スプラシューター",
-    "inkipediaUrl": null
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 1.9,
+      "paint": 2.2,
+      "reticle": null,
+      "blast": 2.7
+    },
+    "damage": {
+      "max": 60,
+      "min": 2,
+      "direct": 60,
+      "blast": null
+    },
+    "kills": "2～4",
+    "killTime": 0.533,
+    "fireFrame": 20,
+    "fireRate": 20,
+    "fireRateRaw": "20F（0.333秒） 秒間発射数 3.0発/秒",
+    "shotsPerSecond": 3,
+    "dps": 180,
+    "spread": 0,
+    "jumpSpread": 7,
+    "blast": {
+      "range": 2.7,
+      "radius": 0.817
+    },
+    "damageRaw": "60.0 確定数 （直撃・爆風） 2～4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
   },
   {
-    "id": "seed-explosher",
-    "name": "エクスプロッシャー",
-    "category": "スロッシャー",
-    "sub": "ポイントセンサー",
-    "special": "アメフラシ",
-    "specialPoints": 200,
-    "range": 4.2,
-    "maintainRange": null,
-    "reticleRange": 4.0,
-    "paintRange": 4.7,
-    "damageMax": 55,
-    "damageMin": 35,
-    "damageStartFrame": null,
-    "damageEndFrame": null,
-    "kills": "2～3",
-    "killTime": 1.217,
-    "fireRate": 55,
+    "id": "weapon-7414816386310933034",
+    "name": "クーゲルシュライバー",
+    "category": "ワイパー",
+    "sub": "タンサンボム",
+    "special": "ジェットパック",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.7,
+      "paint": 5.4,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "4～8→­4～7 秒間発射数 （チャージ時間除く） 20.0→12.0発/秒",
+    "killTime": 0.4,
+    "fireFrame": 3,
+    "fireRate": 3,
+    "fireRateRaw": "3F→5F （0.050→­0.083秒） *2",
+    "shotsPerSecond": 20,
+    "dps": 397.9,
+    "spread": 6,
+    "jumpSpread": 12,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 →29.0～14.5 →30.0～15.0 （11F～19F） *1 連射フレーム 3F→5F （0.050→­0.083秒） *2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%AF%E3%83%BC%E3%82%B2%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "525",
+    "name": "ケルビン525",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "ナイスダマ",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 3.9,
+      "reticle": 2.6,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "2.8",
+    "killTime": 0.317,
+    "fireFrame": 9,
+    "fireRate": 9,
+    "fireRateRaw": "9F 秒間発射数 6.7発/秒",
+    "shotsPerSecond": 6.7,
+    "dps": 240,
+    "spread": 3.2,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （7F～40F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B1%E3%83%AB%E3%83%93%E3%83%B3525",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1725814734967128182",
+    "name": "サメライド",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 220,
+      "min": 70,
+      "direct": 220,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
     "shotsPerSecond": null,
-    "dps": 98.2,
-    "blastRange": 4.7,
-    "blastRadius": 0.57,
-    "directDamage": 55,
-    "blastDamage": 35,
-    "wikiUrl": "https://wikiwiki.jp/splatoon3mix/ブキ/エクスプロッシャー",
-    "inkipediaUrl": null
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": 1.8
+    },
+    "damageRaw": "220.0 ダメージ（遠距離爆風） 70.0",
+    "damageCurve": [
+      {
+        "distance": 220.0,
+        "damage": 70.0
+      }
+    ],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%B5%E3%83%A1%E3%83%A9%E3%82%A4%E3%83%89",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-634336110538812877",
+    "name": "シェルター、フデ/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BF%E3%83%BC%E3%80%81%E3%83%95%E3%83%87/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4390549504975840169",
+    "name": "シャープマーカーネオ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.5,
+      "paint": 3.3,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "2.2",
+    "killTime": 0.267,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 336,
+    "spread": 0,
+    "jumpSpread": 0,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 （4F～20F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%97%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%83%8D%E3%82%AA",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "1",
+    "name": "シューター1/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC1/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7126990469706498535",
+    "name": "ジェットスイーパー",
+    "category": "ワイパー",
+    "sub": "ラインマーカー",
+    "special": "キューインキ",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.6,
+      "paint": 5.2,
+      "reticle": 4.2,
+      "blast": null
+    },
+    "damage": {
+      "max": 32,
+      "min": 16,
+      "direct": 32,
+      "blast": null
+    },
+    "kills": "4.4",
+    "killTime": 0.417,
+    "fireFrame": 8,
+    "fireRate": 8,
+    "fireRateRaw": "8F（0.133秒） 秒間発射数 7.5発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 240,
+    "spread": 2.5,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "32.0～16.0 （9F～25F） 確定数 4～7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "cobr",
+    "name": "ジェットスイーパーCOBR",
+    "category": "ワイパー",
+    "sub": "クイックボム",
+    "special": "ウルトラチャクチ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.6,
+      "paint": 5.2,
+      "reticle": 4.2,
+      "blast": null
+    },
+    "damage": {
+      "max": 32,
+      "min": 16,
+      "direct": 32,
+      "blast": null
+    },
+    "kills": "4.4",
+    "killTime": 0.417,
+    "fireFrame": 8,
+    "fireRate": 8,
+    "fireRateRaw": "8F（0.133秒） 秒間発射数 7.5発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 240,
+    "spread": 2.5,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "32.0～16.0 （9F～25F） 確定数 4～7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91%E3%83%BCCOBR",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3259786616188364394",
+    "name": "ジェットパック",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 6,
+      "paint": null,
+      "reticle": null,
+      "blast": 6.51
+    },
+    "damage": {
+      "max": 120,
+      "min": 0.64,
+      "direct": 120,
+      "blast": 50
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": 60,
+    "fireRate": 60,
+    "fireRateRaw": "60F（1.000秒） 射程 6.0 *1",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 6.51,
+      "radius": 0.51
+    },
+    "damageRaw": "120.0 塗り半径 0.64",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%83%91%E3%83%83%E3%82%AF",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8028034455488741563",
+    "name": "ジムワイパー・ヒュー",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "カニタンク",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.8,
+      "paint": 4.8,
+      "reticle": 4,
+      "blast": null
+    },
+    "damage": {
+      "max": 35,
+      "min": 3,
+      "direct": 35,
+      "blast": null
+    },
+    "kills": "3",
+    "killTime": 1.083,
+    "fireFrame": 26,
+    "fireRate": 26,
+    "fireRateRaw": "26F（0.433秒） 秒間発射数 2.31発",
+    "shotsPerSecond": 2.31,
+    "dps": 80.8,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "35.0 確定数 （インク弾） 3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B8%E3%83%A0%E3%83%AF%E3%82%A4%E3%83%91%E3%83%BC%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6290938279028345090",
+    "name": "スクイックリンα",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "グレートバリア",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.2,
+      "paint": 4.2,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 140,
+      "min": 36,
+      "direct": 140,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 0.817,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数） （ノーチャージ） 1.8667％（53発）",
+    "shotsPerSecond": 1.2,
+    "dps": 164.7,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "140.0 初速 36.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%CE%B1",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-9163766140839623643",
+    "name": "スクイックリンβ",
+    "category": "ワイパー",
+    "sub": "ロボットボム",
+    "special": "ショクワンダー",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.2,
+      "paint": 4.2,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 140,
+      "min": 36,
+      "direct": 140,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 0.817,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数） （ノーチャージ） 1.8667％（53発）",
+    "shotsPerSecond": 1.2,
+    "dps": 164.7,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "140.0 初速 36.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%83%AA%E3%83%B3%CE%B2",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-910397566177752626",
+    "name": "スクリュースロッシャーネオ",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "ウルトラショット",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.3,
+      "paint": 3.5,
+      "reticle": 2.7,
+      "blast": 3.3
+    },
+    "damage": {
+      "max": 76,
+      "min": 52,
+      "direct": 826,
+      "blast": null
+    },
+    "kills": "2",
+    "killTime": 0.867,
+    "fireFrame": 38,
+    "fireRate": 38,
+    "fireRateRaw": "38F DPS（直撃） 120.0/秒",
+    "shotsPerSecond": null,
+    "dps": 120,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.3,
+      "radius": null
+    },
+    "damageRaw": "76.0～52.0 確定数 （直撃） 2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B9%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC%E3%83%8D%E3%82%AA",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2754501761296798353",
+    "name": "スパイガジェットソレーラ",
+    "category": "ワイパー",
+    "sub": "トーピード",
+    "special": "スミナガシート",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 3,
+      "paint": 3.3,
+      "reticle": 2.3,
+      "blast": 2.6
+    },
+    "damage": {
+      "max": 40,
+      "min": 9,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3～12",
+    "killTime": 1.167,
+    "fireFrame": 29,
+    "fireRate": 29,
+    "fireRateRaw": "単発 29F（0.483秒） 連射 26F（0.433秒） *1 秒間発射数 単発 2.1発/秒 連射 2.3発/秒",
+    "shotsPerSecond": 2.1,
+    "dps": 82.8,
+    "spread": 4,
+    "jumpSpread": null,
+    "blast": {
+      "range": 2.6,
+      "radius": null
+    },
+    "damageRaw": "40.0 ～9.0 確定数 3～12",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%91%E3%82%A4%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%BD%E3%83%AC%E3%83%BC%E3%83%A9",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4303873313013242590",
+    "name": "スパッタリー",
+    "category": "ワイパー",
+    "sub": "ジャンプビーコン",
+    "special": "エナジースタンド",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2,
+      "paint": 2.9,
+      "reticle": 1.7,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "1.8",
+    "killTime": 0.183,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 432,
+    "spread": 6.8,
+    "jumpSpread": 11.66,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （7F～15F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%91%E3%83%83%E3%82%BF%E3%83%AA%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8242091370328745364",
+    "name": "スパッタリー・ヒュー",
+    "category": "ワイパー",
+    "sub": "トーピード",
+    "special": "サメライド",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2,
+      "paint": 2.9,
+      "reticle": 1.7,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "1.8",
+    "killTime": 0.183,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 432,
+    "spread": 6.8,
+    "jumpSpread": 11.66,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （7F～15F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%91%E3%83%83%E3%82%BF%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5590767519786697834",
+    "name": "スピナー、ストリンガー/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%94%E3%83%8A%E3%83%BC%E3%80%81%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AC%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3295714962438915901",
+    "name": "スプラシューターコラボ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 3.4,
+      "reticle": 2.4,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "2.5 カス当たり射程 2.7",
+    "killTime": 0.217,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 360,
+    "spread": 4.86,
+    "jumpSpread": 11.66,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （8F～40F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8799883078836000823",
+    "name": "スプラスコープ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "キューインキ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 6.1,
+      "paint": 6.1,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 160,
+      "min": 48,
+      "direct": 160,
+      "blast": null
+    },
+    "kills": "3～2",
+    "killTime": 1.067,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.91,
+    "dps": 145.5,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "160.0 初速 48.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "frst",
+    "name": "スプラスコープFRST",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "カニタンク",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 6.1,
+      "paint": 6.1,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 160,
+      "min": 48,
+      "direct": 160,
+      "blast": null
+    },
+    "kills": "3～2",
+    "killTime": 1.067,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.91,
+    "dps": 145.5,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "160.0 初速 48.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97FRST",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6909533468896497338",
+    "name": "スプラスピナーコラボ",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "グレートバリア",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 4,
+      "reticle": 2.8,
+      "blast": null
+    },
+    "damage": {
+      "max": 32,
+      "min": 16,
+      "direct": 32,
+      "blast": null
+    },
+    "kills": "4～7 秒間発射数 （チャージ時間除く） 15.0発/秒",
+    "killTime": 0.45,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F（0.067秒）",
+    "shotsPerSecond": 15,
+    "dps": 377.1,
+    "spread": 4,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "32.0～16.0 （11F～19F） 連射フレーム 4F（0.067秒）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%82%B9%E3%83%94%E3%83%8A%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2933615566000879645",
+    "name": "スプラチャージャー",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "キューインキ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 5.7,
+      "paint": 5.7,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 160,
+      "min": 48,
+      "direct": 160,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 1.067,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数） （ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.91,
+    "dps": 145.5,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "160.0 初速 48.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "frst",
+    "name": "スプラチャージャーFRST",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "カニタンク",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 5.7,
+      "paint": 5.7,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 160,
+      "min": 48,
+      "direct": 160,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 1.067,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数） （ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.91,
+    "dps": 145.5,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "160.0 初速 48.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BCFRST",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1008283532559645235",
+    "name": "スプラッシュシールド",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 30,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%B9%E3%83%97%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5%E3%82%B7%E3%83%BC%E3%83%AB%E3%83%89",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-9070552783819193694",
+    "name": "スプラマニューバーコラボ",
+    "category": "ワイパー",
+    "sub": "カーリングボム",
+    "special": "ウルトラチャクチ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.5,
+      "paint": 3.3,
+      "reticle": 2.25,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 15,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "2.4",
+    "killTime": 0.267,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 360,
+    "spread": 2,
+    "jumpSpread": 7.5,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～15.0 （7F～15F） 確定数 4～7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%83%9E%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2281090808444142717",
+    "name": "スプラローラー",
+    "category": "ワイパー",
+    "sub": "カーリングボム",
+    "special": "グレートバリア",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 1.4,
+      "paint": 3,
+      "reticle": null,
+      "blast": 0.56
+    },
+    "damage": {
+      "max": 150,
+      "min": 35,
+      "direct": 150,
+      "blast": null
+    },
+    "kills": "1～3 (～6 *3 )",
+    "killTime": null,
+    "fireFrame": 42,
+    "fireRate": 42,
+    "fireRateRaw": "42F（0.700秒） DPS 214.29/秒",
+    "shotsPerSecond": null,
+    "dps": 214.29,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 0.56,
+      "radius": null
+    },
+    "damageRaw": "中心 150.0～35.0 (～17.5 *1 ) 端 100.0～35.0 (～17.5 *2 ) （インク不足時 ×0.25） 確定数 1～3 (～6 *3 )",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%97%E3%83%A9%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7401398247012467173",
+    "name": "スプリンクラー",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 5,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 20,
+      "min": 19,
+      "direct": 20,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "20.0 19.0 18.1 16.9 14.4 12.5 10.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%B9%E3%83%97%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6870854162865129939",
+    "name": "スペシャルウェポン/スーパーチャクチ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%81%E3%83%A3%E3%82%AF%E3%83%81",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-422398117835238566",
+    "name": "スペースシューター",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.3,
+      "paint": 4,
+      "reticle": 3,
+      "blast": null
+    },
+    "damage": {
+      "max": 24,
+      "min": 12,
+      "direct": 24,
+      "blast": null
+    },
+    "kills": "3.1",
+    "killTime": 0.417,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 240,
+    "spread": 4.5,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "24.0～12.0 （10F～26F） 確定数 5～9",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4802905949258324091",
+    "name": "スペースシューターコラボ",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "ジェットパック",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.3,
+      "paint": 4,
+      "reticle": 3,
+      "blast": null
+    },
+    "damage": {
+      "max": 24,
+      "min": 12,
+      "direct": 24,
+      "blast": null
+    },
+    "kills": "3.1",
+    "killTime": 0.417,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 240,
+    "spread": 4.5,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "24.0～12.0 （10F～26F） 確定数 5～9",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-644786412646379850",
+    "name": "ソイチューバーカスタム",
+    "category": "ワイパー",
+    "sub": "タンサンボム",
+    "special": "ウルトラハンコ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.7,
+      "paint": 4.7,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 180,
+      "min": 48,
+      "direct": 180,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 1.25,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数）（ノーチャージ） 2.0％（50発）",
+    "shotsPerSecond": 0.78,
+    "dps": 140.3,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "180.0 初速 48.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%BD%E3%82%A4%E3%83%81%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-656788906861552488",
+    "name": "ダイナモローラーテスラ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "デコイチラシ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "重量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 4.2,
+      "reticle": null,
+      "blast": 0.56
+    },
+    "damage": {
+      "max": 180,
+      "min": 40,
+      "direct": 180,
+      "blast": null
+    },
+    "kills": "1～3 (～5 *3 )",
+    "killTime": null,
+    "fireFrame": 66,
+    "fireRate": 66,
+    "fireRateRaw": "66F DPS 163.64/秒",
+    "shotsPerSecond": null,
+    "dps": 163.64,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 0.56,
+      "radius": null
+    },
+    "damageRaw": "中心 180.0～40.0 (～20.0 *1 ) 端部 120.0～40.0 (～20.0 *2 ) （インク不足時 ×0.25） 確定数 1～3 (～5 *3 )",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A2%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%86%E3%82%B9%E3%83%A9",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2574079719093404123",
+    "name": "チャージャー/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%81%E3%83%A3%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6144909309939444395",
+    "name": "デコイチラシ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 6,
+      "paint": null,
+      "reticle": null,
+      "blast": 6.72
+    },
+    "damage": {
+      "max": 70,
+      "min": 35,
+      "direct": 70,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 6.72,
+      "radius": 0.72
+    },
+    "damageRaw": "70.0 ダメージ(遠爆風) 35.0",
+    "damageCurve": [
+      {
+        "distance": 70.0,
+        "damage": 35.0
+      }
+    ],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%87%E3%82%B3%E3%82%A4%E3%83%81%E3%83%A9%E3%82%B7",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1051507313953631459",
+    "name": "デュアルスイーパーカスタム",
+    "category": "ワイパー",
+    "sub": "ジャンプビーコン",
+    "special": "デコイチラシ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.4,
+      "paint": 4.2,
+      "reticle": 3,
+      "blast": null
+    },
+    "damage": {
+      "max": 28,
+      "min": 14,
+      "direct": 28,
+      "blast": null
+    },
+    "kills": "3.1",
+    "killTime": 0.317,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 280,
+    "spread": 4,
+    "jumpSpread": 8,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "28.0～14.0 （9F～25F） 確定数 4～8",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%87%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%91%E3%83%BC%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7075754247514089576",
+    "name": "デンタルワイパースミ",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "ジェットパック",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.1,
+      "paint": 3.4,
+      "reticle": 3.4,
+      "blast": null
+    },
+    "damage": {
+      "max": 40,
+      "min": 3,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3",
+    "killTime": 1.267,
+    "fireFrame": 30,
+    "fireRate": 30,
+    "fireRateRaw": "30F（0.500秒） 秒間発射数 2.0発",
+    "shotsPerSecond": 2,
+    "dps": 80,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "40.0 確定数 （インク弾） 3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%87%E3%83%B3%E3%82%BF%E3%83%AB%E3%83%AF%E3%82%A4%E3%83%91%E3%83%BC%E3%82%B9%E3%83%9F",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6181388957585092822",
+    "name": "トライストリンガー",
+    "category": "ワイパー",
+    "sub": "ポイズンミスト",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 6.1,
+      "reticle": null,
+      "blast": 3.41
+    },
+    "damage": {
+      "max": 35,
+      "min": 30,
+      "direct": 35,
+      "blast": null
+    },
+    "kills": "1～4 射撃継続時間 7.000秒→12.000秒",
+    "killTime": 0.567,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.41,
+      "radius": 0.41
+    },
+    "damageRaw": "30.0→35.0 インク消費量（装弾数） 5.0%（20発）→ 6.0%（16発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%88%E3%83%A9%E3%82%A4%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AC%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2642715542971158405",
+    "name": "トライストリンガー燈",
+    "category": "ワイパー",
+    "sub": "ラインマーカー",
+    "special": "ジェットパック",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3,
+      "paint": 6.1,
+      "reticle": null,
+      "blast": 3.41
+    },
+    "damage": {
+      "max": 35,
+      "min": 30,
+      "direct": 35,
+      "blast": null
+    },
+    "kills": "1～4 射撃継続時間 7.000秒→12.000秒",
+    "killTime": 0.567,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.41,
+      "radius": 0.41
+    },
+    "damageRaw": "30.0→35.0 インク消費量（装弾数） 5.0%（20発）→ 6.0%（16発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%88%E3%83%A9%E3%82%A4%E3%82%B9%E3%83%88%E3%83%AA%E3%83%B3%E3%82%AC%E3%83%BC%E7%87%88",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1189404846140703812",
+    "name": "トラップ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 45,
+      "min": 0.7,
+      "direct": 45,
+      "blast": 45
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": 0.72
+    },
+    "damageRaw": "45.0 爆風半径(近距離) 0.7",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%88%E3%83%A9%E3%83%83%E3%83%97",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-730828123707157128",
+    "name": "トーピード",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 6,
+      "paint": null,
+      "reticle": null,
+      "blast": 6.52
+    },
+    "damage": {
+      "max": 12,
+      "min": 0.52,
+      "direct": 12,
+      "blast": 60
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 6.52,
+      "radius": 0.52
+    },
+    "damageRaw": "12.0 爆風半径（散弾） 0.52",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%88%E3%83%BC%E3%83%94%E3%83%BC%E3%83%89",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5974211444426939475",
+    "name": "ドライブワイパーデコ",
+    "category": "ワイパー",
+    "sub": "ジャンプビーコン",
+    "special": "マルチミサイル",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 3,
+      "paint": 4,
+      "reticle": 3.2,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 4,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "4",
+    "killTime": 0.967,
+    "fireFrame": 16,
+    "fireRate": 16,
+    "fireRateRaw": "16F（0.267秒） 秒間発射数 3.75発",
+    "shotsPerSecond": 3.75,
+    "dps": 112.5,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0 確定数 （インク弾） 4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%83%AF%E3%82%A4%E3%83%91%E3%83%BC%E3%83%87%E3%82%B3",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1496025650165197901",
+    "name": "ナイスダマ",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 10,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 470,
+      "min": 3.3,
+      "direct": 470,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": 0.517,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 198,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "3.3/F アーマー耐久値 470.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%8A%E3%82%A4%E3%82%B9%E3%83%80%E3%83%9E",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4271599482711766705",
+    "name": "ノヴァブラスター",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "ショクワンダー",
+    "specialPoints": 170,
+    "specialPointsRaw": "170p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 1.6,
+      "paint": 2.1,
+      "reticle": null,
+      "blast": 2.3
+    },
+    "damage": {
+      "max": 125,
+      "min": 1,
+      "direct": 125,
+      "blast": null
+    },
+    "kills": "1～2",
+    "killTime": 0.233,
+    "fireFrame": 40,
+    "fireRate": 40,
+    "fireRateRaw": "40F（0.667秒） 秒間発射数 1.5発/秒",
+    "shotsPerSecond": 1.5,
+    "dps": 187.5,
+    "spread": 0,
+    "jumpSpread": 5.5,
+    "blast": {
+      "range": 2.3,
+      "radius": 0.34
+    },
+    "damageRaw": "125.0 確定数 （直撃・爆風） 1～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%8E%E3%83%B4%E3%82%A1%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-9200004002923790214",
+    "name": "ノヴァブラスターネオ",
+    "category": "ワイパー",
+    "sub": "タンサンボム",
+    "special": "ウルトラハンコ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 1.6,
+      "paint": 2.1,
+      "reticle": null,
+      "blast": 2.3
+    },
+    "damage": {
+      "max": 125,
+      "min": 1,
+      "direct": 125,
+      "blast": null
+    },
+    "kills": "1～2",
+    "killTime": 0.233,
+    "fireFrame": 40,
+    "fireRate": 40,
+    "fireRateRaw": "40F（0.667秒） 秒間発射数 1.5発/秒",
+    "shotsPerSecond": 1.5,
+    "dps": 187.5,
+    "spread": 0,
+    "jumpSpread": 6,
+    "blast": {
+      "range": 2.3,
+      "radius": 0.34
+    },
+    "damageRaw": "125.0 確定数 （直撃・爆風） 1～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%8E%E3%83%B4%E3%82%A1%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%8D%E3%82%AA",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "79",
+    "name": "ノーチラス79",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ウルトラチャクチ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.6,
+      "paint": 4.2,
+      "reticle": 3.3,
+      "blast": null
+    },
+    "damage": {
+      "max": 32,
+      "min": 16,
+      "direct": 32,
+      "blast": null
+    },
+    "kills": "3.5 カス当たり射程 約3.8",
+    "killTime": 0.5,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F（0.067秒）",
+    "shotsPerSecond": 15,
+    "dps": 302.1,
+    "spread": 3.3,
+    "jumpSpread": 3.6,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "32.0～16.0 （7F～15F） 連射フレーム 4F（0.067秒）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%8E%E3%83%BC%E3%83%81%E3%83%A9%E3%82%B979",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7741590231604954294",
+    "name": "ハイドラントカスタム",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "スミナガシート",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "重量級",
+    "range": {
+      "effective": 5,
+      "paint": 6,
+      "reticle": 4.5,
+      "blast": null
+    },
+    "damage": {
+      "max": 40,
+      "min": 16,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3 確定数 （半チャージ） 4",
+    "killTime": 0.583,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F",
+    "shotsPerSecond": 15,
+    "dps": 385.4,
+    "spread": 3,
+    "jumpSpread": 6,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "40.0 ～16.0 *1 （11F～19F） ダメージ （対応経過時間） （半チャージ） 32.0～16.0 （11F～19F）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%8F%E3%82%A4%E3%83%89%E3%83%A9%E3%83%B3%E3%83%88%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2339732117864651407",
+    "name": "バケットスロッシャー",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "トリプルトルネード",
+    "specialPoints": 220,
+    "specialPointsRaw": "220p",
+    "weight": "中量級",
+    "range": {
+      "effective": 70,
+      "paint": 3.4,
+      "reticle": 2.8,
+      "blast": 3.1
+    },
+    "damage": {
+      "max": 70,
+      "min": 50,
+      "direct": 70,
+      "blast": null
+    },
+    "kills": "2",
+    "killTime": 0.717,
+    "fireFrame": 29,
+    "fireRate": 29,
+    "fireRateRaw": "29F 秒間発射数 2.1発/秒",
+    "shotsPerSecond": 2.1,
+    "dps": 144.8,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 3.1,
+      "radius": null
+    },
+    "damageRaw": "70.0～50.0 確定数 2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%90%E3%82%B1%E3%83%83%E3%83%88%E3%82%B9%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1545542772814882078",
+    "name": "バレルスピナー",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "ホップソナー",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 4.2,
+      "paint": 5.1,
+      "reticle": 3.9,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 15,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "4～7 秒間発射数 （チャージ時間除く） 15.0発/秒",
+    "killTime": 0.5,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F（0.067秒）",
+    "shotsPerSecond": 15,
+    "dps": 316.7,
+    "spread": 3.3,
+    "jumpSpread": 7,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～15.0 （11F～19F） 連射フレーム 4F（0.067秒）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%90%E3%83%AC%E3%83%AB%E3%82%B9%E3%83%94%E3%83%8A%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8664823707104880835",
+    "name": "パブロ",
+    "category": "ワイパー",
+    "sub": "スプラッシュボム",
+    "special": "メガホンレーザー5.1ch",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 2.3,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 7.5,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "4～14",
+    "killTime": 0.35,
+    "fireFrame": 7,
+    "fireRate": 7,
+    "fireRateRaw": "7F（0.117秒） （初弾 -1F） 秒間連射数 8.6発/秒",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～7.5 確定数 4～14",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%91%E3%83%96%E3%83%AD",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5755253176528251912",
+    "name": "パブロ・ヒュー",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "ウルトラハンコ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 2.3,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 30,
+      "min": 7.5,
+      "direct": 30,
+      "blast": null
+    },
+    "kills": "4～14",
+    "killTime": 0.35,
+    "fireFrame": 7,
+    "fireRate": 7,
+    "fireRateRaw": "7F（0.117秒） （初弾 -1F） 秒間連射数 8.6発/秒",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "30.0～7.5 確定数 4～14",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%91%E3%83%96%E3%83%AD%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-695315663289099965",
+    "name": "パラシェルターソレーラ",
+    "category": "ワイパー",
+    "sub": "ロボットボム",
+    "special": "ジェットパック",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2,
+      "paint": 3.5,
+      "reticle": 2.2,
+      "blast": 2.5
+    },
+    "damage": {
+      "max": 81,
+      "min": 10.8,
+      "direct": 81,
+      "blast": null
+    },
+    "kills": "2～10",
+    "killTime": 0.683,
+    "fireFrame": 29,
+    "fireRate": 29,
+    "fireRateRaw": "29F（0.483秒） 秒間発射数 2.1発/秒",
+    "shotsPerSecond": 2.1,
+    "dps": 167.6,
+    "spread": 7.2,
+    "jumpSpread": null,
+    "blast": {
+      "range": 2.5,
+      "radius": null
+    },
+    "damageRaw": "81.0～10.8 確定数 2～10",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%91%E3%83%A9%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%BF%E3%83%BC%E3%82%BD%E3%83%AC%E3%83%BC%E3%83%A9",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3491422553546139508",
+    "name": "ヒッセン・ヒュー",
+    "category": "ワイパー",
+    "sub": "タンサンボム",
+    "special": "エナジースタンド",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 2.6,
+      "reticle": 2.3,
+      "blast": null
+    },
+    "damage": {
+      "max": 62,
+      "min": 35,
+      "direct": 62,
+      "blast": null
+    },
+    "kills": "2～3",
+    "killTime": 0.617,
+    "fireFrame": 23,
+    "fireRate": 23,
+    "fireRateRaw": "23F（0.383秒） 秒間発射数 2.6発/秒",
+    "shotsPerSecond": 2.6,
+    "dps": 161.7,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "62.0～35.0 確定数 2～3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%92%E3%83%83%E3%82%BB%E3%83%B3%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7801404103157298106",
+    "name": "ヒーローシューター レプリカ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ウルトラショット",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 3.4,
+      "reticle": 2.4,
+      "blast": null
+    },
+    "damage": {
+      "max": 36,
+      "min": 18,
+      "direct": 36,
+      "blast": null
+    },
+    "kills": "2.5 カス当たり射程 2.7",
+    "killTime": 0.217,
+    "fireFrame": 6,
+    "fireRate": 6,
+    "fireRateRaw": "6F（0.100秒） 秒間発射数 10.0発/秒",
+    "shotsPerSecond": 10,
+    "dps": 360,
+    "spread": 4.86,
+    "jumpSpread": 11.66,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "36.0～18.0 （8F～40F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%20%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "brnz",
+    "name": "フィンセントBRNZ",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "ウルトラショット",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.1,
+      "paint": 3.1,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 60,
+      "min": 16,
+      "direct": 60,
+      "blast": null
+    },
+    "kills": "2～4",
+    "killTime": 0.233,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） （初弾 -1F） 秒間連射数 4.6発/秒",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": 12,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "60.0～16.0 *1 （インク不足時 30.0~15.0） 確定数 2～4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%95%E3%82%A3%E3%83%B3%E3%82%BB%E3%83%B3%E3%83%88BRNZ",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4697559001209551055",
+    "name": "フィンセント・ヒュー",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "マルチミサイル",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.1,
+      "paint": 3.1,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 60,
+      "min": 16,
+      "direct": 60,
+      "blast": null
+    },
+    "kills": "2～4",
+    "killTime": 0.233,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） （初弾 -1F） 秒間連射数 4.6発/秒",
+    "shotsPerSecond": null,
+    "dps": 257.1,
+    "spread": 12,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "60.0～16.0 *1 （インク不足時 30.0~15.0） 確定数 2～4",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%95%E3%82%A3%E3%83%B3%E3%82%BB%E3%83%B3%E3%83%88%E3%83%BB%E3%83%92%E3%83%A5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "v",
+    "name": "フルイドVカスタム",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "ホップソナー",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "重量級",
+    "range": {
+      "effective": 3.1,
+      "paint": 5.7,
+      "reticle": null,
+      "blast": 5.3
+    },
+    "damage": {
+      "max": 24,
+      "min": 7,
+      "direct": 24,
+      "blast": null
+    },
+    "kills": "1~5 射撃継続時間 5.600秒→11.000秒",
+    "killTime": 0.267,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": 300,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 5.3,
+      "radius": null
+    },
+    "damageRaw": "24.0 インク消費量（装弾数） 7.0%（14発）→ 8.0%（12発）",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%95%E3%83%AB%E3%82%A4%E3%83%89V%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2843279381404317176",
+    "name": "ブラスター/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-3135808007797637683",
+    "name": "プライムシューターコラボ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ナイスダマ",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.5,
+      "paint": 4.2,
+      "reticle": 3.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 45,
+      "min": 22.5,
+      "direct": 45,
+      "blast": null
+    },
+    "kills": "3.4",
+    "killTime": 0.283,
+    "fireFrame": 8,
+    "fireRate": 8,
+    "fireRateRaw": "8F（0.133秒） 秒間発射数 7.5発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 337.5,
+    "spread": 2.5,
+    "jumpSpread": 6,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "45.0～22.5 （7F～23F） 確定数 3～5",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%A0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "rg",
+    "name": "プロモデラーRG",
+    "category": "ワイパー",
+    "sub": "スプリンクラー",
+    "special": "ナイスダマ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 3.5,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 24,
+      "min": 12,
+      "direct": 24,
+      "blast": null
+    },
+    "kills": "2.3",
+    "killTime": 0.283,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F（0.067秒） 秒間発射数 15.0発/秒",
+    "shotsPerSecond": 15,
+    "dps": 360,
+    "spread": 12.63,
+    "jumpSpread": 15.54,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "24.0～12.0 （8F～24F） 確定数 5～9",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%97%E3%83%AD%E3%83%A2%E3%83%87%E3%83%A9%E3%83%BCRG",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-5986190924493150651",
+    "name": "プロモデラー彩",
+    "category": "ワイパー",
+    "sub": "クイックボム",
+    "special": "スミナガシート",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "軽量級",
+    "range": {
+      "effective": 2.3,
+      "paint": 3.5,
+      "reticle": 2.1,
+      "blast": null
+    },
+    "damage": {
+      "max": 24,
+      "min": 12,
+      "direct": 24,
+      "blast": null
+    },
+    "kills": "2.3",
+    "killTime": 0.283,
+    "fireFrame": 4,
+    "fireRate": 4,
+    "fireRateRaw": "4F（0.067秒） 秒間発射数 15.0発/秒",
+    "shotsPerSecond": 15,
+    "dps": 360,
+    "spread": 12.63,
+    "jumpSpread": 15.54,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "24.0～12.0 （8F～24F） 確定数 5～9",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%97%E3%83%AD%E3%83%A2%E3%83%87%E3%83%A9%E3%83%BC%E5%BD%A9",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4469754631902838009",
+    "name": "ホクサイ",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ショクワンダー",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 2.6,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 40,
+      "min": 10,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3～10",
+    "killTime": 0.367,
+    "fireFrame": 11,
+    "fireRate": 11,
+    "fireRateRaw": "11F（0.183秒） （初弾 -1F） 秒間連射数 5.5発/秒",
+    "shotsPerSecond": null,
+    "dps": 218.2,
+    "spread": 24,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "40.0～10.0 （インク不足時 20.0） 確定数 3～10",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9B%E3%82%AF%E3%82%B5%E3%82%A4",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7331184415535515482",
+    "name": "ホクサイ彗",
+    "category": "ワイパー",
+    "sub": "ロボットボム",
+    "special": "テイオウイカ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.6,
+      "paint": 2.6,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 40,
+      "min": 10,
+      "direct": 40,
+      "blast": null
+    },
+    "kills": "3～10",
+    "killTime": 0.367,
+    "fireFrame": 11,
+    "fireRate": 11,
+    "fireRateRaw": "11F（0.183秒） （初弾 -1F） 秒間連射数 5.5発/秒",
+    "shotsPerSecond": null,
+    "dps": 218.2,
+    "spread": 24,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "40.0～10.0 （インク不足時 20.0） 確定数 3～10",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9B%E3%82%AF%E3%82%B5%E3%82%A4%E5%BD%97",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1715001576581191208",
+    "name": "ホットブラスターカスタム",
+    "category": "ワイパー",
+    "sub": "ポイントセンサー",
+    "special": "ウルトラチャクチ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.1,
+      "paint": 2.6,
+      "reticle": null,
+      "blast": 2.7
+    },
+    "damage": {
+      "max": 125,
+      "min": 1,
+      "direct": 125,
+      "blast": null
+    },
+    "kills": "1～2",
+    "killTime": 0.233,
+    "fireFrame": 50,
+    "fireRate": 50,
+    "fireRateRaw": "50F（0.833秒） 秒間発射数 1.2発/秒",
+    "shotsPerSecond": 1.2,
+    "dps": 150,
+    "spread": 0,
+    "jumpSpread": 10,
+    "blast": {
+      "range": 2.7,
+      "radius": 0.205
+    },
+    "damageRaw": "125.0 確定数 （直撃・爆風） 1～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9B%E3%83%83%E3%83%88%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2942057371160039378",
+    "name": "ボトルガイザー",
+    "category": "ワイパー",
+    "sub": "スプラッシュシールド",
+    "special": "ウルトラショット",
+    "specialPoints": 220,
+    "specialPointsRaw": "220p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.8,
+      "paint": 4.5,
+      "reticle": 3.3,
+      "blast": null
+    },
+    "damage": {
+      "max": 38,
+      "min": 19,
+      "direct": 38,
+      "blast": null
+    },
+    "kills": "3.6 カス当たり射程 3.9",
+    "killTime": 0.317,
+    "fireFrame": 8,
+    "fireRate": 8,
+    "fireRateRaw": "8F 秒間発射数（最速連打） 7.500発/秒",
+    "shotsPerSecond": 7.5,
+    "dps": 285,
+    "spread": 0,
+    "jumpSpread": 0,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "38.0~19.0 （8F～24F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9C%E3%83%88%E3%83%AB%E3%82%AC%E3%82%A4%E3%82%B6%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-8763504872564717958",
+    "name": "ボールドマーカー",
+    "category": "ワイパー",
+    "sub": "カーリングボム",
+    "special": "ウルトラハンコ",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "最軽量級 *1",
+    "range": {
+      "effective": 1.8,
+      "paint": 3.1,
+      "reticle": 1.5,
+      "blast": null
+    },
+    "damage": {
+      "max": 38,
+      "min": 19,
+      "direct": 38,
+      "blast": null
+    },
+    "kills": "1.6",
+    "killTime": 0.183,
+    "fireFrame": 5,
+    "fireRate": 5,
+    "fireRateRaw": "5F（0.083秒） 秒間発射数 12.0発/秒",
+    "shotsPerSecond": 12,
+    "dps": 456,
+    "spread": 11.66,
+    "jumpSpread": 17.49,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "38.0～19.0 （6F～22F） 確定数 3～6",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%89%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7256367319480045049",
+    "name": "ポイントセンサー",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 6,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%82%BB%E3%83%B3%E3%82%B5%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4923960992380813172",
+    "name": "マニューバー/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%9E%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%90%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-402228203181120321",
+    "name": "マルチミサイル",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 150,
+      "min": 0.22,
+      "direct": 150,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "150.0 ダメージ半径（直撃） 0.22",
+    "damageCurve": [
+      {
+        "distance": 150.0,
+        "damage": 0.22
+      }
+    ],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%9F%E3%82%B5%E3%82%A4%E3%83%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-663576209683757947",
+    "name": "モップリン角",
+    "category": "ワイパー",
+    "sub": "カーリングボム",
+    "special": "カニタンク",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.3,
+      "paint": 16,
+      "reticle": 3,
+      "blast": null
+    },
+    "damage": {
+      "max": 48,
+      "min": 35,
+      "direct": 48,
+      "blast": null
+    },
+    "kills": "3 ［2～3］",
+    "killTime": 1.05,
+    "fireFrame": 45,
+    "fireRate": 45,
+    "fireRateRaw": "45F(0.75秒) (8F+37F) *1 秒間発射数 1.33×2発/秒",
+    "shotsPerSecond": 1.33,
+    "dps": 120,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "48.0～35.0+ 42.0～35.0 ［90.0～70.0］ 確定数 ［トリガー数］ 3 ［2～3］",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%A2%E3%83%83%E3%83%97%E3%83%AA%E3%83%B3%E8%A7%92",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6422777723373672585",
+    "name": "ラピッドブラスター",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "トリプルトルネード",
+    "specialPoints": 190,
+    "specialPointsRaw": "190p",
+    "weight": "中量級",
+    "range": {
+      "effective": 3.1,
+      "paint": 3.5,
+      "reticle": null,
+      "blast": 3.7
+    },
+    "damage": {
+      "max": 85,
+      "min": 2,
+      "direct": 85,
+      "blast": null
+    },
+    "kills": "2～3",
+    "killTime": 0.783,
+    "fireFrame": 35,
+    "fireRate": 35,
+    "fireRateRaw": "35F（0.583秒） 秒間発射数 1.7発/秒",
+    "shotsPerSecond": 1.7,
+    "dps": 145.71,
+    "spread": 0,
+    "jumpSpread": 8,
+    "blast": {
+      "range": 3.7,
+      "radius": 0.667
+    },
+    "damageRaw": "85.0 確定数 （直撃・爆風） 2～3",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%A9%E3%83%94%E3%83%83%E3%83%89%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "4k",
+    "name": "リッター4K",
+    "category": "ワイパー",
+    "sub": "トラップ",
+    "special": "ホップソナー",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "重量級",
+    "range": {
+      "effective": 6.7,
+      "paint": 6.7,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": 180,
+      "min": 96,
+      "direct": 180,
+      "blast": null
+    },
+    "kills": "1",
+    "killTime": 1.6,
+    "fireFrame": 14,
+    "fireRate": 14,
+    "fireRateRaw": "14F（0.233秒） インク消費量（装弾数） （ノーチャージ） 2.25％（44発）",
+    "shotsPerSecond": 0.61,
+    "dps": 110.2,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "180.0 初速 96.0",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%AA%E3%83%83%E3%82%BF%E3%83%BC4K",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7264672436947644844",
+    "name": "ロボットボム",
+    "category": "ワイパー",
+    "sub": "スペシャルウェポン 必要 P",
+    "special": "必要 P",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": 5,
+      "paint": null,
+      "reticle": null,
+      "blast": 5.57
+    },
+    "damage": {
+      "max": 180,
+      "min": 0.57,
+      "direct": 180,
+      "blast": 180
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": 5.57,
+      "radius": 0.57
+    },
+    "damageRaw": "180.0 爆風半径（近距離） 0.57",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%82%B5%E3%83%96%E3%82%A6%E3%82%A7%E3%83%9D%E3%83%B3/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%83%9C%E3%83%A0",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-4953232965389702451",
+    "name": "ロングブラスター",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "ホップソナー",
+    "specialPoints": 210,
+    "specialPointsRaw": "210p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.8,
+      "paint": 3,
+      "reticle": null,
+      "blast": 3.4
+    },
+    "damage": {
+      "max": 125,
+      "min": 1,
+      "direct": 125,
+      "blast": null
+    },
+    "kills": "1～2",
+    "killTime": 0.233,
+    "fireFrame": 60,
+    "fireRate": 60,
+    "fireRateRaw": "60F（1.000秒） 秒間発射数 1.0発/秒",
+    "shotsPerSecond": 1,
+    "dps": 125,
+    "spread": 0,
+    "jumpSpread": 8,
+    "blast": {
+      "range": 3.4,
+      "radius": 0.195
+    },
+    "damageRaw": "125.0 確定数 （直撃・爆風） 1～2",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%96%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-2351252209939070378",
+    "name": "ローラー、スロッシャー/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%80%81%E3%82%B9%E3%83%AD%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-6008444380683319439",
+    "name": "ワイドローラーコラボ",
+    "category": "ワイパー",
+    "sub": "ラインマーカー",
+    "special": "アメフラシ",
+    "specialPoints": 180,
+    "specialPointsRaw": "180p",
+    "weight": "中量級",
+    "range": {
+      "effective": 2.4,
+      "paint": 2.9,
+      "reticle": null,
+      "blast": 0.56
+    },
+    "damage": {
+      "max": 70,
+      "min": 40,
+      "direct": 70,
+      "blast": null
+    },
+    "kills": "2～3 (～5 *2 )",
+    "killTime": 0.983,
+    "fireFrame": 39,
+    "fireRate": 39,
+    "fireRateRaw": "39F（0.650秒） DPS 107.7/秒",
+    "shotsPerSecond": null,
+    "dps": 107.7,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 0.56,
+      "radius": null
+    },
+    "damageRaw": "70.0 ～40.0 (～20.0 *1 ) （インク不足時 ×0.25） 確定数 2～3 (～5 *2 )",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%AF%E3%82%A4%E3%83%89%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%A9%E3%83%9C",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-1502639659496662366",
+    "name": "ワイパー/使用イメージ",
+    "category": "ワイパー",
+    "sub": "不明",
+    "special": "不明",
+    "specialPoints": null,
+    "specialPointsRaw": "",
+    "weight": "",
+    "range": {
+      "effective": null,
+      "paint": null,
+      "reticle": null,
+      "blast": null
+    },
+    "damage": {
+      "max": null,
+      "min": null,
+      "direct": null,
+      "blast": null
+    },
+    "kills": "",
+    "killTime": null,
+    "fireFrame": null,
+    "fireRate": null,
+    "fireRateRaw": "",
+    "shotsPerSecond": null,
+    "dps": null,
+    "spread": null,
+    "jumpSpread": null,
+    "blast": {
+      "range": null,
+      "radius": null
+    },
+    "damageRaw": "",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%AF%E3%82%A4%E3%83%91%E3%83%BC/%E4%BD%BF%E7%94%A8%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
+  },
+  {
+    "id": "weapon-7377269364341319602",
+    "name": "ヴァリアブルローラーフォイル",
+    "category": "ワイパー",
+    "sub": "キューバンボム",
+    "special": "スミナガシート",
+    "specialPoints": 200,
+    "specialPointsRaw": "200p",
+    "weight": "中量級",
+    "range": {
+      "effective": 1.4,
+      "paint": 2.6,
+      "reticle": null,
+      "blast": 0.56
+    },
+    "damage": {
+      "max": 150,
+      "min": 30,
+      "direct": 150,
+      "blast": null
+    },
+    "kills": "1～4 (～7 *3 )",
+    "killTime": null,
+    "fireFrame": 40,
+    "fireRate": 40,
+    "fireRateRaw": "40F（0.667秒） DPS 225.00/秒",
+    "shotsPerSecond": null,
+    "dps": 225,
+    "spread": 18,
+    "jumpSpread": null,
+    "blast": {
+      "range": 0.56,
+      "radius": null
+    },
+    "damageRaw": "中心 150.0～30.0 (～15.0 *1 ) 端 100.0～30.0 (～15.0 *2 ) （インク不足時 ×0.25） 確定数 1～4 (～7 *3 )",
+    "damageCurve": [],
+    "source": "https://wikiwiki.jp/splatoon3mix/%E3%83%96%E3%82%AD/%E3%83%B4%E3%82%A1%E3%83%AA%E3%82%A2%E3%83%96%E3%83%AB%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%95%E3%82%A9%E3%82%A4%E3%83%AB",
+    "sourceName": "WikiWiki - Splatoon3 Wiki"
   }
 ]
